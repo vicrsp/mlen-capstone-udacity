@@ -1,2 +1,3 @@
 Input/*.zip
 Input/*.parquet
+Source/__pycache__/*
