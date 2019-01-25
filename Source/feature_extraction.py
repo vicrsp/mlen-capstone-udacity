@@ -9,7 +9,7 @@ import time
 SAMPLING_FREQ = 800000 / 0.02  # 800,000 data points taken over 20 ms
 SIGNAL_SPACE_STEP = 200000
 
-def extract_time_based_features(x, step = SIGNAL_SPACE_STEP, fs = SAMPLING_FREQ, plot = False):
+def extract_time_based_features(x, step = SIGNAL_SPACE_STEP, fs = SAMPLING_FREQ):
 
     features = []
 
@@ -19,13 +19,6 @@ def extract_time_based_features(x, step = SIGNAL_SPACE_STEP, fs = SAMPLING_FREQ,
     features.append(len(peaks[(peaks >= SIGNAL_SPACE_STEP) & (peaks < SIGNAL_SPACE_STEP * 2)]))
     features.append(len(peaks[(peaks >= SIGNAL_SPACE_STEP * 2) & (peaks < SIGNAL_SPACE_STEP * 3)]))
     features.append(len(peaks[(peaks >= SIGNAL_SPACE_STEP * 3) & (peaks < SIGNAL_SPACE_STEP * 4)]))
-
-    if plot:
-        _, ax = plt.subplots(nrows=1, ncols=1, figsize=(30, 10))
-
-        ax.plot(x)
-        ax.plot(peaks, x[peaks], "x")
-        plt.show()
 
     # 2. Mean width of peaks
     widths = signal.peak_widths(x, peaks, rel_height=0.9)[0]

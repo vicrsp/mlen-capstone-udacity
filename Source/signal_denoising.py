@@ -12,6 +12,13 @@ from scipy.signal import butter
 
 SAMPLING_FREQ = 800000 / 0.02  # 800,000 data points taken over 20 ms
 
+def maddest(d, axis=None):
+    """
+    Mean Absolute Deviation
+    """
+    return np.mean(np.absolute(d - np.mean(d, axis)), axis)
+
+
 def add_high_pass_filter(x, low_freq=1000, sample_fs=SAMPLING_FREQ):
     """
     From @randxie https://github.com/randxie/Kaggle-VSB-Baseline/blob/master/src/utils/util_signal.py
@@ -27,7 +34,7 @@ def add_high_pass_filter(x, low_freq=1000, sample_fs=SAMPLING_FREQ):
     #sos = butter(10, low_freq, btype='hp', fs=sample_fs, output='sos')
     
     # scipy version 1.1.0
-    sos = butter(10, normal_cutoff, btype='hp', output='sos')
+    sos = butter(10, Wn = [normal_cutoff], btype='highpass', output='sos')
     filtered_sig = signal.sosfilt(sos, x)
 
     return filtered_sig
@@ -46,10 +53,8 @@ def wavelet_denoising( x, wavelet='db4', level=1, mode = 'per'):
     
     # Calculate sigma for threshold as defined in 
     # http://dspace.vsb.cz/bitstream/handle/10084/133114/VAN431_FEI_P1807_1801V001_2018.pdf
-    sigma = (1/0.6745) * mad( coeff[-level] )
-    #sigma = (1/0.6745) * mad(coeff)
-
-    #sigma = mad( coeff[-level] )
+    #sigma = (1/0.6745) * mad( coeff[-level] )
+    sigma = (1/0.6745) * maddest( coeff[-level] )
     
     # Calculte the univeral threshold
     uthresh = sigma * np.sqrt( 2*np.log( len( x ) ) )
@@ -59,26 +64,11 @@ def wavelet_denoising( x, wavelet='db4', level=1, mode = 'per'):
     return pywt.waverec( coeff, wavelet, mode )
 
 
-def denoise_signal(x, wavelet='db4', level=1, low_freq=1000, sample_fs=SAMPLING_FREQ, mode = 'per', plot = False):
+def denoise_signal(x, wavelet='db4', level=1, low_freq=1000, sample_fs=SAMPLING_FREQ, mode = 'per'):
     """
     Apply a high pass filter followed by a wavelete denoising algorithm
     """
     x_hp = add_high_pass_filter(x, low_freq, sample_fs)
     x_dn = wavelet_denoising(x_hp, wavelet, level, mode)
-
-    if plot:
-        
-        _, ax = plt.subplots(nrows=1, ncols=3, figsize=(30, 10))
-    
-        ax[0].plot(x, alpha=0.5)
-        ax[0].legend(['Original'], fontsize=24)
-        
-        ax[1].plot(x_hp, 'r', alpha=0.5)
-        ax[1].legend(['HP filter'], fontsize=24)
-        
-        ax[2].plot(x_dn, 'g', alpha=0.5)
-        ax[2].legend(['HP filter and denoising'], fontsize=24)
-        
-        plt.show()
 
     return x_dn
