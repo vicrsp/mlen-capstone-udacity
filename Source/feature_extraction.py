@@ -16,42 +16,46 @@ def extract_time_based_features(x, step = SIGNAL_SPACE_STEP, fs = SAMPLING_FREQ)
     # 1. Number of peaks
     peaks, properties = signal.find_peaks(x, prominence = 10, distance = 50)
     
+    features.append(len(peaks[peaks < SIGNAL_SPACE_STEP]))
     features.append(len(peaks[(peaks >= SIGNAL_SPACE_STEP) & (peaks < SIGNAL_SPACE_STEP * 2)]))
     features.append(len(peaks[(peaks >= SIGNAL_SPACE_STEP * 2) & (peaks < SIGNAL_SPACE_STEP * 3)]))
     features.append(len(peaks[(peaks >= SIGNAL_SPACE_STEP * 3) & (peaks < SIGNAL_SPACE_STEP * 4)]))
 
     # 2. Mean width of peaks
     widths = signal.peak_widths(x, peaks, rel_height=0.9)[0]
+    features.append(widths[(peaks < SIGNAL_SPACE_STEP)].mean() / fs)
     features.append(widths[(peaks >= SIGNAL_SPACE_STEP) & (peaks < SIGNAL_SPACE_STEP * 2)].mean() / fs)
     features.append(widths[(peaks >= SIGNAL_SPACE_STEP * 2) & (peaks < SIGNAL_SPACE_STEP * 3)].mean() / fs)
     features.append(widths[(peaks >= SIGNAL_SPACE_STEP * 3) & (peaks < SIGNAL_SPACE_STEP * 4)].mean() / fs)
-    features.append(widths[peaks >= SIGNAL_SPACE_STEP].mean()  / fs)
 
     # 3. Max width of peaks
+    features.append(max(widths[(peaks < SIGNAL_SPACE_STEP)], default=0) / fs)
     features.append(max(widths[(peaks >= SIGNAL_SPACE_STEP) & (peaks < SIGNAL_SPACE_STEP * 2)], default=0) / fs)
     features.append(max(widths[(peaks >= SIGNAL_SPACE_STEP * 2) & (peaks < SIGNAL_SPACE_STEP * 3)], default=0) / fs)
     features.append(max(widths[(peaks >= SIGNAL_SPACE_STEP * 3) & (peaks < SIGNAL_SPACE_STEP * 4)], default=0) / fs)
-    features.append(max(widths[peaks >= SIGNAL_SPACE_STEP], default=0) / fs)
 
     # 4. Min width of peaks
+    features.append(min(widths[(peaks < SIGNAL_SPACE_STEP)], default=0) / fs)
     features.append(min(widths[(peaks >= SIGNAL_SPACE_STEP) & (peaks < SIGNAL_SPACE_STEP * 2)], default=0) / fs)
     features.append(min(widths[(peaks >= SIGNAL_SPACE_STEP * 2) & (peaks < SIGNAL_SPACE_STEP * 3)], default=0) / fs)
     features.append(min(widths[(peaks >= SIGNAL_SPACE_STEP * 3) & (peaks < SIGNAL_SPACE_STEP * 4)], default=0) / fs)
-    features.append(min(widths[peaks >= SIGNAL_SPACE_STEP], default=0) / fs)
  
     # 5. Mean height of peaks
     x_height = x
     x_height[peaks] = properties["prominences"]
+    features.append(x_height[peaks[(peaks < SIGNAL_SPACE_STEP)]].mean())
     features.append(x_height[peaks[(peaks >= SIGNAL_SPACE_STEP) & (peaks < SIGNAL_SPACE_STEP * 2)]].mean())
     features.append(x_height[peaks[(peaks >= SIGNAL_SPACE_STEP * 2) & (peaks < SIGNAL_SPACE_STEP * 3)]].mean())
     features.append(x_height[peaks[(peaks >= SIGNAL_SPACE_STEP * 3) & (peaks < SIGNAL_SPACE_STEP * 4)]].mean())
 
     # 6. Max height of peaks
+    features.append(max(x_height[peaks[(peaks < SIGNAL_SPACE_STEP)]], default=0))
     features.append(max(x_height[peaks[(peaks >= SIGNAL_SPACE_STEP) & (peaks < SIGNAL_SPACE_STEP * 2)]], default=0))
     features.append(max(x_height[peaks[(peaks >= SIGNAL_SPACE_STEP * 2) & (peaks < SIGNAL_SPACE_STEP * 3)]], default=0))
     features.append(max(x_height[peaks[(peaks >= SIGNAL_SPACE_STEP * 3) & (peaks < SIGNAL_SPACE_STEP * 4)]], default=0))
 
     # 7. Min height of peaks
+    features.append(min(x_height[peaks[(peaks < SIGNAL_SPACE_STEP)]], default=0))
     features.append(min(x_height[peaks[(peaks >= SIGNAL_SPACE_STEP) & (peaks < SIGNAL_SPACE_STEP * 2)]], default=0))
     features.append(min(x_height[peaks[(peaks >= SIGNAL_SPACE_STEP * 2) & (peaks < SIGNAL_SPACE_STEP * 3)]], default=0))
     features.append(min(x_height[peaks[(peaks >= SIGNAL_SPACE_STEP * 3) & (peaks < SIGNAL_SPACE_STEP * 4)]], default=0))
@@ -62,7 +66,7 @@ def extract_time_based_features(x, step = SIGNAL_SPACE_STEP, fs = SAMPLING_FREQ)
     return features
 
 
-def extract_fourier_features(x, split_size = 0.25, step = SIGNAL_SPACE_STEP, fs = SAMPLING_FREQ, plot = False):
+def extract_fourier_features(x, split_size = 0.25, step = SIGNAL_SPACE_STEP, fs = SAMPLING_FREQ):
 
     features = []
 
@@ -84,13 +88,6 @@ def extract_fourier_features(x, split_size = 0.25, step = SIGNAL_SPACE_STEP, fs 
         features.append(f[start + ix ]) # Frequency of max value
 
         ratio += split_size
-
-
-    if plot == True:
-        plt.figure()
-        plt.semilogy(f , Pxx)
-        plt.xlabel('Frequency [Hz]')
-        plt.ylabel('PSD [V**2/Hz]')
     
     return features
 

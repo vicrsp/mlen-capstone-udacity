@@ -28,35 +28,39 @@ SIGNAL_SPACE_STEP = 200000
 
 #%% Execute feature extraction
 
-features =  metadata_train.copy()#.drop('Unnamed: 0', axis = 1)
+features =  metadata_train.copy()
 
+features['number_of_peaks_p1'] = np.zeros(metadata_train.shape[0])
 features['number_of_peaks_p2'] = np.zeros(metadata_train.shape[0])
 features['number_of_peaks_p3'] = np.zeros(metadata_train.shape[0])
 features['number_of_peaks_p4'] = np.zeros(metadata_train.shape[0])
 
+features['mean_width_of_peaks_p1'] = np.zeros(metadata_train.shape[0])
 features['mean_width_of_peaks_p2'] = np.zeros(metadata_train.shape[0])
 features['mean_width_of_peaks_p4'] = np.zeros(metadata_train.shape[0])
 features['mean_width_of_peaks_p3'] = np.zeros(metadata_train.shape[0])
-features['mean_width_of_peaks_overall'] = np.zeros(metadata_train.shape[0])
 
+features['max_width_of_peaks_p1'] = np.zeros(metadata_train.shape[0])
 features['max_width_of_peaks_p2'] = np.zeros(metadata_train.shape[0])
 features['max_width_of_peaks_p3'] = np.zeros(metadata_train.shape[0])
 features['max_width_of_peaks_p4'] = np.zeros(metadata_train.shape[0])
-features['max_width_of_peaks_overall'] = np.zeros(metadata_train.shape[0])
 
+features['min_width_of_peaks_p1'] = np.zeros(metadata_train.shape[0])
 features['min_width_of_peaks_p2'] = np.zeros(metadata_train.shape[0])
 features['min_width_of_peaks_p4'] = np.zeros(metadata_train.shape[0])
 features['min_width_of_peaks_p3'] = np.zeros(metadata_train.shape[0])
-features['min_width_of_peaks_overall'] = np.zeros(metadata_train.shape[0])
 
+features['mean_height_of_peaks_p1'] = np.zeros(metadata_train.shape[0])
 features['mean_height_of_peaks_p2'] = np.zeros(metadata_train.shape[0])
 features['mean_height_of_peaks_p4'] = np.zeros(metadata_train.shape[0])
 features['mean_height_of_peaks_p3'] = np.zeros(metadata_train.shape[0])
 
+features['max_height_of_peaks_p1'] = np.zeros(metadata_train.shape[0])
 features['max_height_of_peaks_p2'] = np.zeros(metadata_train.shape[0])
 features['max_height_of_peaks_p4'] = np.zeros(metadata_train.shape[0])
 features['max_height_of_peaks_p3'] = np.zeros(metadata_train.shape[0])
 
+features['min_height_of_peaks_p1'] = np.zeros(metadata_train.shape[0])
 features['min_height_of_peaks_p2'] = np.zeros(metadata_train.shape[0])
 features['min_height_of_peaks_p4'] = np.zeros(metadata_train.shape[0])
 features['min_height_of_peaks_p3'] = np.zeros(metadata_train.shape[0])
@@ -94,9 +98,9 @@ for signal_id in signals:
     signal_id = str(meta_row['signal_id'].values[0])
     phase = str(meta_row['phase'].values[0])
     
-    signal_dn = denoise_signal(signal_raw.squeeze(), wavelet='db4', level=1, low_freq=10000, mode='zero', plot=False)
-    feat_fft = extract_fourier_features(signal_raw.squeeze(), step = SIGNAL_SPACE_STEP, fs = SAMPLING_FREQ, plot=False)
-    feat_ts = extract_time_based_features(signal_dn, plot=False)
+    signal_dn = denoise_signal(signal_raw.squeeze(), wavelet='db4', level=1, low_freq=10000, mode='zero')
+    feat_fft = extract_fourier_features(signal_dn, step = SIGNAL_SPACE_STEP, fs = SAMPLING_FREQ)
+    feat_ts = extract_time_based_features(signal_dn, SIGNAL_SPACE_STEP, SAMPLING_FREQ)
     features.iloc[meta_row.index, 4:] = feat_ts + feat_fft
 
     end = time.time()
@@ -109,12 +113,8 @@ features.to_csv('./Output/all_features.csv', sep=";")
 features.head()
 
 #%% Features statistics - Save to file to allow better visualization
-#fig = plt.figure()
-#sns.pairplot(features, hue = 'target')
-#plt.savefig('./Output/pair_plot_full.png')
-#plt.close(fig)
+from sklearn.preprocessing import MinMaxScaler
+scaler = MinMaxScaler()
 
-#%% Fourier analysis of signal
-metadata_train.head()
-
+features_norm = 
 #%%
