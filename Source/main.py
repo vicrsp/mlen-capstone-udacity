@@ -111,10 +111,3 @@ for signal_id in signals:
 #%%
 features.to_csv('./Output/all_features.csv', sep=";")
 features.head()
-
-#%% Features statistics - Save to file to allow better visualization
-from sklearn.preprocessing import MinMaxScaler
-scaler = MinMaxScaler()
-
-features_norm = 
-#%%

@@ -10,6 +10,7 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html
 from sklearn.preprocessing import MinMaxScaler
+from sklearn.preprocessing import StandardScaler
 from dash.dependencies import Input, Output, State
 import plotly.graph_objs as go
 
@@ -18,6 +19,10 @@ features_raw = pd.read_csv(output_dir + '/all_features.csv', sep=";")
 features  = features_raw.drop(['Unnamed: 0', 'signal_id', 'id_measurement', 'phase'], axis = 1).copy()
 scaler = MinMaxScaler()
 features_norm = pd.DataFrame(scaler.fit_transform(features), columns = features.columns)
+
+scaler = StandardScaler()
+features_scaled = pd.DataFrame(scaler.fit_transform(features), columns = features.columns)
+features_log = features.apply(np.log)
 
 app = dash.Dash()
 
@@ -83,7 +88,7 @@ app.layout = html.Div(children=[
 [Input('dropdown-features', 'value')])
 def display_histgraphs(selected_values):
     traces = []    
-    [traces.append(go.Histogram(x = (features.loc[:,str(val)].values),histnorm='probability', name = str(val))) for val in selected_values]
+    [traces.append(go.Histogram(x = (features_log.loc[:,str(val)].values),histnorm='probability', name = str(val))) for val in selected_values]
     
     layout = go.Layout(barmode='overlay', legend=dict(orientation="h"))
 
@@ -93,7 +98,7 @@ def display_histgraphs(selected_values):
 [Input('dropdown-features', 'value')])
 def display_linegraphs(selected_values):
     traces = []
-    [traces.append(go.Line(y = (features.loc[:,str(val)].values), name = str(val))) for val in selected_values]
+    [traces.append(go.Line(y = (features_log.loc[:,str(val)].values), name = str(val))) for val in selected_values]
     layout = go.Layout(legend=dict(orientation="h"))
     return go.Figure(data = traces, layout=layout)
 
@@ -102,10 +107,10 @@ def display_linegraphs(selected_values):
 def display_pairplotgraphs(selected_values):
     data_dict = []
     for val in selected_values:
-        data_dict.append(dict(label = val, values = features.loc[:,str(val)].values))
+        data_dict.append(dict(label = val, values = features_log.loc[:,str(val)].values))
 
 
-    color_vals = features['target']
+    color_vals = features_norm['target']
     pl_colorscale=[[0.0, 'red'],
                [1, 'blue']]
     trace = (go.Splom(dimensions= data_dict, 
@@ -115,6 +120,9 @@ def display_pairplotgraphs(selected_values):
                             showscale=False,
                             )
             ))
+
+    trace['diagonal'].update(visible=False)
+    trace['showupperhalf']=False
 
     layout = go.Layout(
         height=600,
