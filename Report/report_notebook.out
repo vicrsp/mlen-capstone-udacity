@@ -1,22 +1,22 @@
-\BOOKMARK [1][-]{section.1}{Machine Learning Engineer Nanodegree}{}% 1
-\BOOKMARK [2][-]{subsection.1.1}{Capstone Project}{section.1}% 2
-\BOOKMARK [2][-]{subsection.1.2}{I. Definition}{section.1}% 3
-\BOOKMARK [3][-]{subsubsection.1.2.1}{Project Overview}{subsection.1.2}% 4
-\BOOKMARK [3][-]{subsubsection.1.2.2}{Problem Statement}{subsection.1.2}% 5
-\BOOKMARK [3][-]{subsubsection.1.2.3}{Metrics}{subsection.1.2}% 6
-\BOOKMARK [2][-]{subsection.1.3}{II. Analysis}{section.1}% 7
-\BOOKMARK [3][-]{subsubsection.1.3.1}{Data Exploration and Visualization}{subsection.1.3}% 8
-\BOOKMARK [3][-]{subsubsection.1.3.2}{Algorithms and Techniques}{subsection.1.3}% 9
-\BOOKMARK [3][-]{subsubsection.1.3.3}{Benchmark}{subsection.1.3}% 10
-\BOOKMARK [2][-]{subsection.1.4}{III. Methodology}{section.1}% 11
-\BOOKMARK [3][-]{subsubsection.1.4.1}{Data Preprocessing}{subsection.1.4}% 12
-\BOOKMARK [3][-]{subsubsection.1.4.2}{Implementation}{subsection.1.4}% 13
-\BOOKMARK [3][-]{subsubsection.1.4.3}{Refinement}{subsection.1.4}% 14
-\BOOKMARK [2][-]{subsection.1.5}{IV. Results}{section.1}% 15
-\BOOKMARK [3][-]{subsubsection.1.5.1}{Model Evaluation and Validation}{subsection.1.5}% 16
-\BOOKMARK [3][-]{subsubsection.1.5.2}{Justification}{subsection.1.5}% 17
-\BOOKMARK [2][-]{subsection.1.6}{V. Conclusion}{section.1}% 18
-\BOOKMARK [3][-]{subsubsection.1.6.1}{Free-Form Visualization}{subsection.1.6}% 19
-\BOOKMARK [3][-]{subsubsection.1.6.2}{Reflection}{subsection.1.6}% 20
-\BOOKMARK [3][-]{subsubsection.1.6.3}{Improvement}{subsection.1.6}% 21
-\BOOKMARK [3][-]{subsubsection.1.6.4}{References}{subsection.1.6}% 22
+\BOOKMARK [1][-]{section.1}{Definition}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Project Overview}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Problem Statement}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Metrics}{section.1}% 4
+\BOOKMARK [1][-]{section.2}{Analysis}{}% 5
+\BOOKMARK [2][-]{subsection.2.1}{Data Exploration and Visualization}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.2}{Algorithms and Techniques}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.3}{Benchmark}{section.2}% 8
+\BOOKMARK [1][-]{section.3}{Methodology}{}% 9
+\BOOKMARK [2][-]{subsection.3.1}{Data Preprocessing}{section.3}% 10
+\BOOKMARK [2][-]{subsection.3.2}{Feature Transformation}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.3}{Feature Selection}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.4}{Implementation}{section.3}% 13
+\BOOKMARK [2][-]{subsection.3.5}{Refinement}{section.3}% 14
+\BOOKMARK [1][-]{section.4}{Results}{}% 15
+\BOOKMARK [2][-]{subsection.4.1}{Model Evaluation and Validation}{section.4}% 16
+\BOOKMARK [2][-]{subsection.4.2}{Justification}{section.4}% 17
+\BOOKMARK [1][-]{section.5}{Conclusion}{}% 18
+\BOOKMARK [2][-]{subsection.5.1}{Free-Form Visualization}{section.5}% 19
+\BOOKMARK [2][-]{subsection.5.2}{Reflection}{section.5}% 20
+\BOOKMARK [2][-]{subsection.5.3}{Improvement}{section.5}% 21
+\BOOKMARK [1][-]{section.6}{References}{}% 22

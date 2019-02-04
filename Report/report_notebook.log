@@ -1,84 +1,74 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.8.9)  2 FEB 2019 18:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.2)  4 FEB 2019 20:40
 entering extended mode
-**report_notebook.tex
-(C:\Users\Victor\git\Udacity\mlen-capstone-udacity\Report\report_notebook.tex
-LaTeX2e <2011/06/27>
-Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
-abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
-croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
-lician, german, german-x-2013-05-26, greek, gujarati, hindi, hungarian, iceland
-ic, indonesian, interlingua, irish, italian, kannada, kurmanji, latin, latvian,
- lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerman, n
-german-x-2013-05-26, nynorsk, oriya, panjabi, pinyin, polish, portuguese, roman
-ian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swissgerm
-an, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, usengl
-ishmax, welsh, loaded.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\article.cls"
-Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\size11.clo"
-File: size11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+**./report_notebook.tex
+(report_notebook.tex
+LaTeX2e <2018-12-01>
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\article.cls"
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size11.clo"
+File: size11.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 )
-\c@part=\count79
-\c@section=\count80
-\c@subsection=\count81
-\c@subsubsection=\count82
-\c@paragraph=\count83
-\c@subparagraph=\count84
-\c@figure=\count85
-\c@table=\count86
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fontenc.sty"
-Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.def"
-File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
-LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+) ("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\fontenc.st
+y"
+Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
+ ("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1enc.def"
+File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\mathpazo.sty"
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\mathpazo.s
+ty"
 Package: mathpazo 2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
 \symupright=\mathgroup4
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
-Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphicx
+.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
-Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\keyval.s
+ty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\graphics
+.sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
-Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics\trig.sty
+"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\grap
+hics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 91.
+Package graphics Info: Driver file: pdftex.def on input line 99.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count87
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-def\pdft
+ex.def"
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-(C:\Users\Victor\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption.sty
-Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption.s
+ty"
+Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
 
-(C:\Users\Victor\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\caption3.sty
-Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 57.
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\caption3.
+sty"
+Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
 \captionmargin=\dimen105
 \captionmargin@=\dimen106
 \captionwidth=\dimen107
@@ -87,127 +77,208 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \caption@parindent=\dimen110
 \caption@hangindent=\dimen111
 )
-\c@ContinuedFloat=\count88
+\c@caption@flags=\count88
+\c@ContinuedFloat=\count89
 )
-(C:\Users\Victor\AppData\Roaming\MiKTeX\2.9\tex\latex\xcolor\xcolor.sty
-Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/adjustbox\adjustb
+ox.sty"
+Package: adjustbox 2019/01/04 v1.2 Adjusting TeX boxes (trim, clip, ...)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
-File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xkeyval\xkeyval.s
+ty"
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
+
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval\xkeyval
+.tex"
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/generic/xkeyval\xkvutil
+s.tex"
+\XKV@toks=\toks15
+\XKV@tempa@toks=\toks16
+)
+\XKV@depth=\count90
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/adjustbox\adjcalc
+.sty"
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/adjustbox\trimcli
+p.sty"
+Package: trimclip 2018/04/08 v1.1 Trim and clip general TeX material
+
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/collectbox\collec
+tbox.sty"
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box27
+)
+\tc@llx=\dimen112
+\tc@lly=\dimen113
+\tc@urx=\dimen114
+\tc@ury=\dimen115
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/adjustbox\tc-pdft
+ex.def"
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen116
+\adjbox@Height=\dimen117
+\adjbox@Depth=\dimen118
+\adjbox@Totalheight=\dimen119
+\adjbox@pwidth=\dimen120
+\adjbox@pheight=\dimen121
+\adjbox@pdepth=\dimen122
+\adjbox@ptotalheight=\dimen123
+
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ifoddpage\ifoddpa
+ge.sty"
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count91
+)
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/varwidth\varwidth
+.sty"
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box28
+\sift@deathcycles=\count92
+\@vwid@loff=\dimen124
+\@vwid@roff=\dimen125
+))
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/xcolor\xcolor.sty
+"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/graphics-cfg\colo
+r.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
-Package xcolor Info: Model `RGB' extended on input line 1353.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\enumerate.sty"
-Package: enumerate 1999/03/05 v3.00 enumerate extensions (DPC)
-\@enLab=\toks15
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\enumerate.s
+ty"
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks17
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
-Package: geometry 2010/09/12 v5.6 Page Geometry
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry
+.sty"
+Package: geometry 2018/04/16 v5.8 Page Geometry
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifpdf.sty"
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifpdf.
+sty"
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifvtex.sty"
-Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifvtex
+.sty"
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/generic/ifxetex\ifxetex
+.sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count89
-\Gm@cntv=\count90
-\c@Gm@tempcnt=\count91
-\Gm@bindingoffset=\dimen112
-\Gm@wd@mp=\dimen113
-\Gm@odd@mp=\dimen114
-\Gm@even@mp=\dimen115
-\Gm@layoutwidth=\dimen116
-\Gm@layoutheight=\dimen117
-\Gm@layouthoffset=\dimen118
-\Gm@layoutvoffset=\dimen119
-\Gm@dimlist=\toks16
+\Gm@cnth=\count93
+\Gm@cntv=\count94
+\c@Gm@tempcnt=\count95
+\Gm@bindingoffset=\dimen126
+\Gm@wd@mp=\dimen127
+\Gm@odd@mp=\dimen128
+\Gm@even@mp=\dimen129
+\Gm@layoutwidth=\dimen130
+\Gm@layoutheight=\dimen131
+\Gm@layouthoffset=\dimen132
+\Gm@layoutvoffset=\dimen133
+\Gm@dimlist=\toks18
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
-Package: amsmath 2013/01/14 v2.14 AMS math features
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/geometry\geometry
+.cfg"))
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsmath.s
+ty"
+Package: amsmath 2018/12/01 v2.17b AMS math features
 \@mathmargin=\skip43
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
-Package: amstext 2000/06/29 v2.01
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
-File: amsgen.sty 1999/11/30 v2.0
-\@emptytoks=\toks17
-\ex@=\dimen120
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amstext.s
+ty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsgen.st
+y"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen134
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
-Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen121
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsbsy.st
+y"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen135
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
-Package: amsopn 1999/12/14 v2.01 operator names
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsmath\amsopn.st
+y"
+Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count92
-LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count93
-\leftroot@=\count94
-LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count95
-\DOTSCASE@=\count96
-LaTeX Info: Redefining \ldots on input line 378.
-LaTeX Info: Redefining \dots on input line 381.
-LaTeX Info: Redefining \cdots on input line 466.
-\Mathstrutbox@=\box26
-\strutbox@=\box27
-\big@size=\dimen122
-LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count97
-\c@MaxMatrixCols=\count98
+\inf@bad=\count96
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count97
+\leftroot@=\count98
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count99
+\DOTSCASE@=\count100
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box29
+\strutbox@=\box30
+\big@size=\dimen136
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count101
+\c@MaxMatrixCols=\count102
 \dotsspace@=\muskip10
-\c@parentequation=\count99
-\dspbrk@lvl=\count100
-\tag@help=\toks18
-\row@=\count101
-\column@=\count102
-\maxfields@=\count103
-\andhelp@=\toks19
-\eqnshift@=\dimen123
-\alignsep@=\dimen124
-\tagshift@=\dimen125
-\tagwidth@=\dimen126
-\totwidth@=\dimen127
-\lineht@=\dimen128
-\@envbody=\toks20
+\c@parentequation=\count103
+\dspbrk@lvl=\count104
+\tag@help=\toks20
+\row@=\count105
+\column@=\count106
+\maxfields@=\count107
+\andhelp@=\toks21
+\eqnshift@=\dimen137
+\alignsep@=\dimen138
+\tagshift@=\dimen139
+\tagwidth@=\dimen140
+\totwidth@=\dimen141
+\lineht@=\dimen142
+\@envbody=\toks22
 \multlinegap=\skip44
 \multlinetaggap=\skip45
-\mathdisplay@stack=\toks21
-LaTeX Info: Redefining \[ on input line 2665.
-LaTeX Info: Redefining \] on input line 2666.
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amssymb.
+sty"
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\amsfonts
+.sty"
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup5
 \symAMSb=\mathgroup6
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\textcomp.sty"
-Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\textcomp.sty
+"
+Package: textcomp 2018/08/11 v2.0j Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
 (textcomp)               4 = 5 + \texteuro
@@ -219,133 +290,220 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             only a restricted character set as indicated.
 (textcomp)             Family '?' is the default used for unknown fonts.
 (textcomp)             See the documentation for details.
-Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1enc.def"
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
+ ("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1enc.def"
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
-)
-LaTeX Info: Redefining \oldstylenums on input line 266.
-Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
-Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
-Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
-Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
-Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
-Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
-Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
-Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
-Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
-Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
-Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
-Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
-Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
-Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
-Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
-Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
-Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
-Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
-Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
-Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
-Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
-Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
-Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
-Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
-
-Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
-Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
-Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
-Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
-Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
-Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
-Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 311.
-Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 312.
-Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 313.
-Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 314.
-Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 315.
-Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 316.
-Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 317.
-Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 318.
-Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 319.
-Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 320.
-Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 321.
-Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 322.
-Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 323.
-Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 324.
-Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 325.
-Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 326.
-Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 327.
-Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 328.
-Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 329.
-Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 330.
-Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 331.
-Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 332.
-Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 333.
-Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 334.
-Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 335.
-Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 336.
-Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 337.
-Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
-Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
-Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\eurosym\eurosym.sty"
-Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
-\@eurobox=\box28
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amscls\amsthm.sty"
-Package: amsthm 2004/08/06 v2.20
-\thm@style=\toks22
-\thm@bodyfont=\toks23
-\thm@headfont=\toks24
-\thm@notefont=\toks25
-\thm@headpunct=\toks26
-\thm@preskip=\skip46
-\thm@postskip=\skip47
-\thm@headsep=\skip48
-\dth@everypar=\toks27
-)
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
-Package: inputenc 2008/03/30 v1.1d Input encoding file
-\inpenc@prehook=\toks28
-\inpenc@posthook=\toks29
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\latin1.def"
-File: latin1.def 2008/03/30 v1.1d Input encoding file
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+ ("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1enc.dfu"
+File: ts1enc.dfu 2018/10/05 v1.2f UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+   defining Unicode char U+FEFF (decimal 65279)
 ))
-(C:\Users\Victor\AppData\Roaming\MiKTeX\2.9\tex\latex\fancyvrb\fancyvrb.sty
-Package: fancyvrb 2008/02/07
+LaTeX Info: Redefining \oldstylenums on input line 334.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 349.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 350.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 351.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 352.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 353.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 354.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 355.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 356.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 357.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 358.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 359.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 360.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 361.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 362.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 363.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 364.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 365.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 366.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 367.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 368.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 369.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 370.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 371.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 372.
 
-Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
-<2008/02/07> (tvz)
-\FV@CodeLineNo=\count104
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 373.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 374.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 375.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 376.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 377.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 378.
+Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 379.
+Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 380.
+Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 381.
+Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 382.
+Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 383.
+Package textcomp Info: Setting lmtt sub-encoding to TS1/0 on input line 384.
+Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 385.
+Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 386.
+Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 387.
+Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 388.
+Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 389.
+Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 390.
+Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 391.
+Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 392.
+Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 393.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 394.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 395.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 396.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 397.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 398.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 399.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 400.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 401.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 402.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 403.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 404.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 405.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
+)
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/upquote\upquote.s
+ty"
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+)
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/eurosym\eurosym.s
+ty"
+Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
+\@eurobox=\box31
+) ("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ucs\ucs.sty"
+Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
+
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ucs\uni-global.de
+f"
+File: uni-global.def 2013/05/13 UCS: Unicode global data
+)
+\uc@secondtry=\count108
+\uc@combtoks=\toks24
+\uc@combtoksb=\toks25
+\uc@temptokena=\toks26
+)
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\inputenc.sty
+"
+Package: inputenc 2018/08/11 v1.3c Input encoding file
+\inpenc@prehook=\toks27
+\inpenc@posthook=\toks28
+ ("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ucs\utf8x.def"
+File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
+))
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/fancyvrb\fancyvrb
+.sty"
+Package: fancyvrb 2019/01/15
+ Style option: `fancyvrb' v3.2a <2019/01/15> (tvz)
+\FV@CodeLineNo=\count109
 \FV@InFile=\read1
-\FV@TabBox=\box29
-\c@FancyVerbLine=\count105
-\FV@StepNumber=\count106
+\FV@TabBox=\box32
+\c@FancyVerbLine=\count110
+\FV@StepNumber=\count111
 \FV@OutFile=\write3
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\grffile.sty"
-Package: grffile 2012/04/05 v1.16 Extended file name support for graphics (HO)
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\grffile.
+sty"
+Package: grffile 2017/06/30 v1.18 Extended file name support for graphics (HO)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\kvoption
+s.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ltxcmd
+s.sty"
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\kvsetk
+eys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\infwar
+err.sty"
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\etexcm
+ds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\ifluat
+ex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+))))
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\pdftex
+cmds.sty"
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -355,155 +513,179 @@ Package pdftexcmds Info: \pdfdraftmode found.
 Package grffile Info: Option `multidot' is set to `true'.
 Package grffile Info: Option `extendedchars' is set to `false'.
 Package grffile Info: Option `space' is set to `true'.
-Package grffile Info: \Gin@ii of package `graphicx' fixed on input line 486.
+Package grffile Info: \Gin@ii of package `graphicx' fixed on input line 494.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
-Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hyperref
+.sty"
+Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
-Package: hobsub-hyperref 2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\hobsub
+-hyperref.sty"
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
-Package: hobsub-generic 2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
-Package: hobsub 2012/04/25 v1.12 Construct package bundles (HO)
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\hobsub
+-generic.sty"
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
 Package hobsub Info: Skipping package `ltxcmds' (already loaded).
 Package hobsub Info: Skipping package `ifluatex' (already loaded).
 Package hobsub Info: Skipping package `ifvtex' (already loaded).
-Package: intcalc 2007/09/27 v1.1 Expandable calculations with integers (HO)
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
 Package hobsub Info: Skipping package `ifpdf' (already loaded).
 Package hobsub Info: Skipping package `etexcmds' (already loaded).
 Package hobsub Info: Skipping package `kvsetkeys' (already loaded).
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
 Package hobsub Info: Skipping package `pdftexcmds' (already loaded).
-Package: pdfescape 2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
-Package: bigintcalc 2012/04/08 v1.3 Expandable calculations on big integers (HO
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
 )
-Package: bitset 2011/01/30 v1.1 Handle bit-vector datatype (HO)
-Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
 )
 Package hobsub Info: Skipping package `hobsub' (already loaded).
-Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
-Package: hopatch 2011/06/24 v1.1 Wrapper for package hooks (HO)
-Package: xcolor-patch 2011/01/30 xcolor patch
-Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
-Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
-Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
-Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
-Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\auxhook.
+sty"
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen129
-\Hy@linkcounter=\count107
-\Hy@pagecounter=\count108
+\@linkdim=\dimen143
+\Hy@linkcounter=\count112
+\Hy@pagecounter=\count113
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
-File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\pd1enc.d
+ef"
+File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count109
+\Hy@SavedSpaceFactor=\count114
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/00miktex\hyperref
+.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
-Package hyperref Info: Hyper figures OFF on input line 4443.
-Package hyperref Info: Link nesting OFF on input line 4448.
-Package hyperref Info: Hyper index ON on input line 4451.
-Package hyperref Info: Plain pages OFF on input line 4458.
-Package hyperref Info: Backreferencing OFF on input line 4463.
+Package hyperref Info: Hyper figures OFF on input line 4519.
+Package hyperref Info: Link nesting OFF on input line 4524.
+Package hyperref Info: Hyper index ON on input line 4527.
+Package hyperref Info: Plain pages OFF on input line 4534.
+Package hyperref Info: Backreferencing OFF on input line 4539.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count110
-
-(C:\Users\Victor\AppData\Roaming\MiKTeX\2.9\tex\latex\url\url.sty
+Package hyperref Info: Bookmarks ON on input line 4772.
+\c@Hy@tempcnt=\count115
+ ("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/url\url.sty"
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen130
-\Fld@menulength=\count111
-\Field@Width=\dimen131
-\Fld@charsize=\dimen132
-Package hyperref Info: Hyper figures OFF on input line 6295.
-Package hyperref Info: Link nesting OFF on input line 6300.
-Package hyperref Info: Hyper index ON on input line 6303.
-Package hyperref Info: backreferencing OFF on input line 6310.
-Package hyperref Info: Link coloring OFF on input line 6315.
-Package hyperref Info: Link coloring with OCG OFF on input line 6320.
-Package hyperref Info: PDF/A mode OFF on input line 6325.
-LaTeX Info: Redefining \ref on input line 6365.
-LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count112
-\c@Item=\count113
-\c@Hfootnote=\count114
+LaTeX Info: Redefining \url on input line 5125.
+\XeTeXLinkMargin=\dimen144
+\Fld@menulength=\count116
+\Field@Width=\dimen145
+\Fld@charsize=\dimen146
+Package hyperref Info: Hyper figures OFF on input line 6380.
+Package hyperref Info: Link nesting OFF on input line 6385.
+Package hyperref Info: Hyper index ON on input line 6388.
+Package hyperref Info: backreferencing OFF on input line 6395.
+Package hyperref Info: Link coloring OFF on input line 6400.
+Package hyperref Info: Link coloring with OCG OFF on input line 6405.
+Package hyperref Info: PDF/A mode OFF on input line 6410.
+LaTeX Info: Redefining \ref on input line 6450.
+LaTeX Info: Redefining \pageref on input line 6454.
+\Hy@abspage=\count117
+\c@Item=\count118
+\c@Hfootnote=\count119
 )
+Package hyperref Info: Driver (autodetected): hpdftex.
 
-Package hyperref Message: Driver (autodetected): hpdftex.
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\hpdftex.
+def"
+File: hpdftex.def 2018/11/30 v6.88e Hyperref driver for pdfTeX
+\Fld@listcount=\count120
+\c@bookmark@seq@number=\count121
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
-File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count115
-\c@bookmark@seq@number=\count116
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
-Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\rerunfil
+echeck.sty"
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip49
+\Hy@SectionHShift=\skip46
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\longtable.sty"
-Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
-\LTleft=\skip50
-\LTright=\skip51
-\LTpre=\skip52
-\LTpost=\skip53
-\LTchunksize=\count117
-\LTcapwidth=\dimen133
-\LT@head=\box30
-\LT@firsthead=\box31
-\LT@foot=\box32
-\LT@lastfoot=\box33
-\LT@cols=\count118
-\LT@rows=\count119
-\c@LT@tables=\count120
-\c@LT@chunks=\count121
-\LT@p@ftn=\toks30
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/tools\longtable.s
+ty"
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip47
+\LTright=\skip48
+\LTpre=\skip49
+\LTpost=\skip50
+\LTchunksize=\count122
+\LTcapwidth=\dimen147
+\LT@head=\box33
+\LT@firsthead=\box34
+\LT@foot=\box35
+\LT@lastfoot=\box36
+\LT@cols=\count123
+\LT@rows=\count124
+\c@LT@tables=\count125
+\c@LT@chunks=\count126
+\LT@p@ftn=\toks29
 )
-(C:\Users\Victor\AppData\Roaming\MiKTeX\2.9\tex\latex\booktabs\booktabs.sty
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/booktabs\booktabs
+.sty"
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
-\heavyrulewidth=\dimen134
-\lightrulewidth=\dimen135
-\cmidrulewidth=\dimen136
-\belowrulesep=\dimen137
-\belowbottomsep=\dimen138
-\aboverulesep=\dimen139
-\abovetopsep=\dimen140
-\cmidrulesep=\dimen141
-\cmidrulekern=\dimen142
-\defaultaddspace=\dimen143
-\@cmidla=\count122
-\@cmidlb=\count123
-\@aboverulesep=\dimen144
-\@belowrulesep=\dimen145
-\@thisruleclass=\count124
-\@lastruleclass=\count125
-\@thisrulewidth=\dimen146
+\heavyrulewidth=\dimen148
+\lightrulewidth=\dimen149
+\cmidrulewidth=\dimen150
+\belowrulesep=\dimen151
+\belowbottomsep=\dimen152
+\aboverulesep=\dimen153
+\abovetopsep=\dimen154
+\cmidrulesep=\dimen155
+\cmidrulekern=\dimen156
+\defaultaddspace=\dimen157
+\@cmidla=\count127
+\@cmidlb=\count128
+\@aboverulesep=\dimen158
+\@belowrulesep=\dimen159
+\@thisruleclass=\count129
+\@lastruleclass=\count130
+\@thisrulewidth=\dimen160
 )
-(C:\Users\Victor\AppData\Roaming\MiKTeX\2.9\tex\latex\enumitem\enumitem.sty
-Package: enumitem 2011/09/28 v3.5.2 Customized lists
-\labelindent=\skip54
-\enit@outerparindent=\dimen147
-\enit@toks=\toks31
-\enit@inbox=\box34
-\enitdp@description=\count126
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/enumitem\enumitem
+.sty"
+Package: enumitem 2019/01/14 v3.7 Customized lists
+\labelindent=\skip51
+\enit@outerparindent=\dimen161
+\enit@toks=\toks30
+\enit@inbox=\box37
+\enit@count@id=\count131
+\enitdp@description=\count132
+)
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ulem\ulem.sty"
+\UL@box=\box38
+\UL@hyphenbox=\box39
+\UL@skip=\skip52
+\UL@hook=\toks31
+\UL@height=\dimen162
+\UL@pe=\count133
+\UL@pixel=\dimen163
+\ULC@box=\box40
+Package: ulem 2012/05/18
+\ULdepth=\dimen164
 )
 Package hyperref Info: Option `breaklinks' set `true' on input line 267.
 Package hyperref Info: Option `colorlinks' set `true' on input line 267.
 
-No file report_notebook.aux.
+(report_notebook.aux)
+\openout1 = `report_notebook.aux'.
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 274.
 LaTeX Font Info:    ... okay on input line 274.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 274.
@@ -519,36 +701,55 @@ LaTeX Font Info:    ... okay on input line 274.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 274.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 274.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ts1cmr.fd"
-File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1cmr.fd"
+File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 274.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 274.
 LaTeX Font Info:    ... okay on input line 274.
 LaTeX Font Info:    Try loading font information for T1+ppl on input line 274.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1ppl.fd"
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\t1ppl.fd"
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
 )
-(C:\Users\Victor\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/context/base\supp-pdf.m
+kii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count127
-\scratchdimen=\dimen148
-\scratchbox=\box35
-\nofMPsegments=\count128
-\nofMParguments=\count129
+\scratchcounter=\count134
+\scratchdimen=\dimen165
+\scratchbox=\box41
+\nofMPsegments=\count135
+\nofMParguments=\count136
 \everyMPshowfont=\toks32
-\MPscratchCnt=\count130
-\MPscratchDim=\dimen149
-\MPnumerator=\count131
-\makeMPintoPDFobject=\count132
+\MPscratchCnt=\count137
+\MPscratchDim=\dimen166
+\MPnumerator=\count138
+\makeMPintoPDFobject=\count139
 \everyMPtoPDFconversion=\toks33
+)
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\epstopdf
+-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/oberdiek\grfext.s
+ty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
 )
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
- (C:\Users\Victor\AppData\Roaming\MiKTeX\2.9\tex\latex\caption\ltcaption.sty
-Package: ltcaption 2013/02/03 v1.3-62 longtable captions (AR)
+
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/caption\ltcaption
+.sty"
+Package: ltcaption 2018/08/26 v1.4-95 longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
 
@@ -586,191 +787,63 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\AtBeginShipoutBox=\box36
-Package hyperref Info: Link coloring ON on input line 274.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
-Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
-Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ucs\ucsencs.def"
+File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
-\c@section@level=\count133
+\AtBeginShipoutBox=\box42
+Package hyperref Info: Link coloring ON on input line 274.
+
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.
+sty"
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/generic/oberdiek\gettit
+lestring.sty"
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count140
 )
 LaTeX Info: Redefining \ref on input line 274.
 LaTeX Info: Redefining \pageref on input line 274.
 LaTeX Info: Redefining \nameref on input line 274.
+ (report_notebook.out) (report_notebook.out)
 \@outlinefile=\write4
+\openout4 = `report_notebook.out'.
+
 LaTeX Font Info:    Try loading font information for OT1+ppl on input line 278.
 
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1ppl.fd"
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ot1ppl.fd"
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
 LaTeX Font Info:    Try loading font information for OML+zplm on input line 278
 .
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omlzplm.fd"
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\omlzplm.fd
+"
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-! Font OML/zplm/m/it/12=zplmr7m at 12.0pt not loadable: Metric (TFM) file not f
-ound.
-<to be read again> 
-                   relax 
-l.278 
-      
-I wasn't able to read the size data for this font,
-so I will ignore the font specification.
-[Wizards can fix TFM files using TFtoPL/PLtoTF.]
-You might try inserting a different font spec;
-e.g., type `I\font<same font id>=<substitute font name>'.
-
-! Font OML/zplm/m/it/9=zplmr7m at 9.0pt not loadable: Metric (TFM) file not fou
-nd.
-<to be read again> 
-                   relax 
-l.278 
-      
-I wasn't able to read the size data for this font,
-so I will ignore the font specification.
-[Wizards can fix TFM files using TFtoPL/PLtoTF.]
-You might try inserting a different font spec;
-e.g., type `I\font<same font id>=<substitute font name>'.
-
-! Font OML/zplm/m/it/7=zplmr7m at 7.0pt not loadable: Metric (TFM) file not fou
-nd.
-<to be read again> 
-                   relax 
-l.278 
-      
-I wasn't able to read the size data for this font,
-so I will ignore the font specification.
-[Wizards can fix TFM files using TFtoPL/PLtoTF.]
-You might try inserting a different font spec;
-e.g., type `I\font<same font id>=<substitute font name>'.
-
 LaTeX Font Info:    Try loading font information for OMS+zplm on input line 278
 .
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omszplm.fd"
+
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\omszplm.fd
+"
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-! Font OMS/zplm/m/n/12=zplmr7y at 12.0pt not loadable: Metric (TFM) file not fo
-und.
-<to be read again> 
-                   relax 
-l.278 
-      
-I wasn't able to read the size data for this font,
-so I will ignore the font specification.
-[Wizards can fix TFM files using TFtoPL/PLtoTF.]
-You might try inserting a different font spec;
-e.g., type `I\font<same font id>=<substitute font name>'.
-
-! Font OMS/zplm/m/n/9=zplmr7y at 9.0pt not loadable: Metric (TFM) file not foun
-d.
-<to be read again> 
-                   relax 
-l.278 
-      
-I wasn't able to read the size data for this font,
-so I will ignore the font specification.
-[Wizards can fix TFM files using TFtoPL/PLtoTF.]
-You might try inserting a different font spec;
-e.g., type `I\font<same font id>=<substitute font name>'.
-
-! Font OMS/zplm/m/n/7=zplmr7y at 7.0pt not loadable: Metric (TFM) file not foun
-d.
-<to be read again> 
-                   relax 
-l.278 
-      
-I wasn't able to read the size data for this font,
-so I will ignore the font specification.
-[Wizards can fix TFM files using TFtoPL/PLtoTF.]
-You might try inserting a different font spec;
-e.g., type `I\font<same font id>=<substitute font name>'.
-
 LaTeX Font Info:    Try loading font information for OMX+zplm on input line 278
 .
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omxzplm.fd"
+
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\omxzplm.fd
+"
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
-! Font OMX/zplm/m/n/12=zplmr7v at 12.0pt not loadable: Metric (TFM) file not fo
-und.
-<to be read again> 
-                   relax 
-l.278 
-      
-I wasn't able to read the size data for this font,
-so I will ignore the font specification.
-[Wizards can fix TFM files using TFtoPL/PLtoTF.]
-You might try inserting a different font spec;
-e.g., type `I\font<same font id>=<substitute font name>'.
-
-! Font OMX/zplm/m/n/9=zplmr7v at 9.0pt not loadable: Metric (TFM) file not foun
-d.
-<to be read again> 
-                   relax 
-l.278 
-      
-I wasn't able to read the size data for this font,
-so I will ignore the font specification.
-[Wizards can fix TFM files using TFtoPL/PLtoTF.]
-You might try inserting a different font spec;
-e.g., type `I\font<same font id>=<substitute font name>'.
-
-! Font OMX/zplm/m/n/7=zplmr7v at 7.0pt not loadable: Metric (TFM) file not foun
-d.
-<to be read again> 
-                   relax 
-l.278 
-      
-I wasn't able to read the size data for this font,
-so I will ignore the font specification.
-[Wizards can fix TFM files using TFtoPL/PLtoTF.]
-You might try inserting a different font spec;
-e.g., type `I\font<same font id>=<substitute font name>'.
-
 LaTeX Font Info:    Try loading font information for OT1+zplm on input line 278
 .
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ot1zplm.fd"
+
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ot1zplm.fd
+"
 File: ot1zplm.fd 2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
 )
-! Font OT1/zplm/m/n/12=zplmr7t at 12.0pt not loadable: Metric (TFM) file not fo
-und.
-<to be read again> 
-                   relax 
-l.278 
-      
-I wasn't able to read the size data for this font,
-so I will ignore the font specification.
-[Wizards can fix TFM files using TFtoPL/PLtoTF.]
-You might try inserting a different font spec;
-e.g., type `I\font<same font id>=<substitute font name>'.
-
-! Font OT1/zplm/m/n/9=zplmr7t at 9.0pt not loadable: Metric (TFM) file not foun
-d.
-<to be read again> 
-                   relax 
-l.278 
-      
-I wasn't able to read the size data for this font,
-so I will ignore the font specification.
-[Wizards can fix TFM files using TFtoPL/PLtoTF.]
-You might try inserting a different font spec;
-e.g., type `I\font<same font id>=<substitute font name>'.
-
-! Font OT1/zplm/m/n/7=zplmr7t at 7.0pt not loadable: Metric (TFM) file not foun
-d.
-<to be read again> 
-                   relax 
-l.278 
-      
-I wasn't able to read the size data for this font,
-so I will ignore the font specification.
-[Wizards can fix TFM files using TFtoPL/PLtoTF.]
-You might try inserting a different font spec;
-e.g., type `I\font<same font id>=<substitute font name>'.
-
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
 (Font)              scaled to size 12.50409pt on input line 278.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
@@ -783,2050 +856,200 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 9.37807pt on input line 278.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
 (Font)              scaled to size 7.29405pt on input line 278.
-Missing character: There is no ( in font nullfont!
+
 
 LaTeX Warning: No \author given.
-
-! Math formula deleted: Insufficient symbol fonts.
-\endtabular ->\crcr \egroup \egroup $
-                                     \egroup 
-l.278 
-      
-Sorry, but I can't typeset math unless \textfont 2
-and \scriptfont 2 and \scriptscriptfont 2 have all
-the \fontdimen values needed in math symbol fonts.
 
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 284.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <12> not available
 (Font)              Font shape `T1/ppl/b/n' tried instead on input line 287.
-LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 297.
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/ucs\uni-0.def"
+File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
+)
 [1
 
 {C:/Users/Victor/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 11.40997pt on input line 355.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 8.33606pt on input line 355.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 355.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 11.40997pt on input line 355.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 8.33606pt on input line 355.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 6.25204pt on input line 355.
+LaTeX Font Info:    Try loading font information for TS1+ppl on input line 386.
 
-! LaTeX Error: File `https://wikimedia.org/api/rest_v1/media/math/render/svg/5c
-aa90fc15105b74b59a30bbc9cc2e5bd43a13b7' not found.
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.360 ...5caa90fc15105b74b59a30bbc9cc2e5bd43a13b7}
-                                                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-LaTeX Font Info:    Try loading font information for TS1+ppl on input line 393.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\ts1ppl.fd"
+("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\ts1ppl.fd"
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 393.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 386.
 
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
-File: t1cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+ ("C:\Users\Victor\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\t1cmtt.fd"
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-<train_data_dist_twosided.png, id=21, 867.24pt x 433.62pt>
+<train_data_dist_twosided.png, id=110, 867.24pt x 433.62pt>
 File: train_data_dist_twosided.png Graphic file (type png)
-
 <use train_data_dist_twosided.png>
-Package pdftex.def Info: train_data_dist_twosided.png used on input line 431.
+Package pdftex.def Info: train_data_dist_twosided.png  used on input line 423.
 (pdftex.def)             Requested size: 375.80544pt x 187.90198pt.
- [2
-! Font \csname\endcsname=fplmr at 10.95pt not loadable: Metric (TFM) file not f
-ound.
-\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
-                                                  \fi \fi 
-l.441 
-      
-I wasn't able to read the size data for this font,
-so I will ignore the font specification.
-[Wizards can fix TFM files using TFtoPL/PLtoTF.]
-You might try inserting a different font spec;
-e.g., type `I\font<same font id>=<substitute font name>'.
 
-] <signal_phase_example.png, id=37, 867.24pt x 433.62pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[2]
+<signal_phase_example.png, id=129, 867.24pt x 433.62pt>
 File: signal_phase_example.png Graphic file (type png)
-
 <use signal_phase_example.png>
-Package pdftex.def Info: signal_phase_example.png used on input line 449.
+Package pdftex.def Info: signal_phase_example.png  used on input line 442.
 (pdftex.def)             Requested size: 375.80544pt x 187.90198pt.
-
-<signal_fault_normal_raw.png, id=38, 867.24pt x 578.16pt>
+<signal_fault_normal_raw.png, id=131, 867.24pt x 578.16pt>
 File: signal_fault_normal_raw.png Graphic file (type png)
-
 <use signal_fault_normal_raw.png>
-Package pdftex.def Info: signal_fault_normal_raw.png used on input line 454.
+Package pdftex.def Info: signal_fault_normal_raw.png  used on input line 452.
 (pdftex.def)             Requested size: 375.80544pt x 250.53596pt.
 
-Underfull \hbox (badness 1648) in paragraph at lines 453--455
-[]\T1/ppl/m/n/10.95 The fig-ure be-low shows a com-par-i-son be-tween a fault a
-nd nor-mal ex-am-ple sig-nals.
- []
 
-[3 <C:/Users/Victor/git/Udacity/mlen-capstone-udacity/Report/train_data_dist_tw
-osided.png> <C:/Users/Victor/git/Udacity/mlen-capstone-udacity/Report/signal_ph
-ase_example.png>] [4 <C:/Users/Victor/git/Udacity/mlen-capstone-udacity/Report/
-signal_fault_normal_raw.png>]
-! Font OML/zplm/m/it/10.95=zplmr7m at 10.95pt not loadable: Metric (TFM) file n
-ot found.
-<to be read again> 
-                   relax 
-l.561   wavelet coefficients \(
-                               c\) for each level.
-I wasn't able to read the size data for this font,
-so I will ignore the font specification.
-[Wizards can fix TFM files using TFtoPL/PLtoTF.]
-You might try inserting a different font spec;
-e.g., type `I\font<same font id>=<substitute font name>'.
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-! Font OML/zplm/m/it/8=zplmr7m at 8.0pt not loadable: Metric (TFM) file not fou
-nd.
-<to be read again> 
-                   relax 
-l.561   wavelet coefficients \(
-                               c\) for each level.
-I wasn't able to read the size data for this font,
-so I will ignore the font specification.
-[Wizards can fix TFM files using TFtoPL/PLtoTF.]
-You might try inserting a different font spec;
-e.g., type `I\font<same font id>=<substitute font name>'.
-
-! Font OML/zplm/m/it/6=zplmr7m at 6.0pt not loadable: Metric (TFM) file not fou
-nd.
-<to be read again> 
-                   relax 
-l.561   wavelet coefficients \(
-                               c\) for each level.
-I wasn't able to read the size data for this font,
-so I will ignore the font specification.
-[Wizards can fix TFM files using TFtoPL/PLtoTF.]
-You might try inserting a different font spec;
-e.g., type `I\font<same font id>=<substitute font name>'.
-
-! Font OMS/zplm/m/n/10.95=zplmr7y at 10.95pt not loadable: Metric (TFM) file no
-t found.
-<to be read again> 
-                   relax 
-l.561   wavelet coefficients \(
-                               c\) for each level.
-I wasn't able to read the size data for this font,
-so I will ignore the font specification.
-[Wizards can fix TFM files using TFtoPL/PLtoTF.]
-You might try inserting a different font spec;
-e.g., type `I\font<same font id>=<substitute font name>'.
-
-! Font OMS/zplm/m/n/8=zplmr7y at 8.0pt not loadable: Metric (TFM) file not foun
-d.
-<to be read again> 
-                   relax 
-l.561   wavelet coefficients \(
-                               c\) for each level.
-I wasn't able to read the size data for this font,
-so I will ignore the font specification.
-[Wizards can fix TFM files using TFtoPL/PLtoTF.]
-You might try inserting a different font spec;
-e.g., type `I\font<same font id>=<substitute font name>'.
-
-! Font OMS/zplm/m/n/6=zplmr7y at 6.0pt not loadable: Metric (TFM) file not foun
-d.
-<to be read again> 
-                   relax 
-l.561   wavelet coefficients \(
-                               c\) for each level.
-I wasn't able to read the size data for this font,
-so I will ignore the font specification.
-[Wizards can fix TFM files using TFtoPL/PLtoTF.]
-You might try inserting a different font spec;
-e.g., type `I\font<same font id>=<substitute font name>'.
-
-! Font OMX/zplm/m/n/10.95=zplmr7v at 10.95pt not loadable: Metric (TFM) file no
-t found.
-<to be read again> 
-                   relax 
-l.561   wavelet coefficients \(
-                               c\) for each level.
-I wasn't able to read the size data for this font,
-so I will ignore the font specification.
-[Wizards can fix TFM files using TFtoPL/PLtoTF.]
-You might try inserting a different font spec;
-e.g., type `I\font<same font id>=<substitute font name>'.
-
-! Font OMX/zplm/m/n/8=zplmr7v at 8.0pt not loadable: Metric (TFM) file not foun
-d.
-<to be read again> 
-                   relax 
-l.561   wavelet coefficients \(
-                               c\) for each level.
-I wasn't able to read the size data for this font,
-so I will ignore the font specification.
-[Wizards can fix TFM files using TFtoPL/PLtoTF.]
-You might try inserting a different font spec;
-e.g., type `I\font<same font id>=<substitute font name>'.
-
-! Font OMX/zplm/m/n/6=zplmr7v at 6.0pt not loadable: Metric (TFM) file not foun
-d.
-<to be read again> 
-                   relax 
-l.561   wavelet coefficients \(
-                               c\) for each level.
-I wasn't able to read the size data for this font,
-so I will ignore the font specification.
-[Wizards can fix TFM files using TFtoPL/PLtoTF.]
-You might try inserting a different font spec;
-e.g., type `I\font<same font id>=<substitute font name>'.
-
-! Font OT1/zplm/m/n/10.95=zplmr7t at 10.95pt not loadable: Metric (TFM) file no
-t found.
-<to be read again> 
-                   relax 
-l.561   wavelet coefficients \(
-                               c\) for each level.
-I wasn't able to read the size data for this font,
-so I will ignore the font specification.
-[Wizards can fix TFM files using TFtoPL/PLtoTF.]
-You might try inserting a different font spec;
-e.g., type `I\font<same font id>=<substitute font name>'.
-
-! Font OT1/zplm/m/n/8=zplmr7t at 8.0pt not loadable: Metric (TFM) file not foun
-d.
-<to be read again> 
-                   relax 
-l.561   wavelet coefficients \(
-                               c\) for each level.
-I wasn't able to read the size data for this font,
-so I will ignore the font specification.
-[Wizards can fix TFM files using TFtoPL/PLtoTF.]
-You might try inserting a different font spec;
-e.g., type `I\font<same font id>=<substitute font name>'.
-
-! Font OT1/zplm/m/n/6=zplmr7t at 6.0pt not loadable: Metric (TFM) file not foun
-d.
-<to be read again> 
-                   relax 
-l.561   wavelet coefficients \(
-                               c\) for each level.
-I wasn't able to read the size data for this font,
-so I will ignore the font specification.
-[Wizards can fix TFM files using TFtoPL/PLtoTF.]
-You might try inserting a different font spec;
-e.g., type `I\font<same font id>=<substitute font name>'.
-
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 561.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 561.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 561.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 561.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 561.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 561.
-Missing character: There is no ( in font nullfont!
-! Math formula deleted: Insufficient symbol fonts.
-\)->\relax \ifmmode \ifinner $
-                              \else \@badmath \fi \else \@badmath \fi 
-l.561   wavelet coefficients \(c\)
-                                   for each level.
-Sorry, but I can't typeset math unless \textfont 2
-and \scriptfont 2 and \scriptscriptfont 2 have all
-the \fontdimen values needed in math symbol fonts.
-
-! Math formula deleted: Insufficient symbol fonts.
-\)->\relax \ifmmode \ifinner $
-                              \else \@badmath \fi \else \@badmath \fi 
-l.563   Chosse an appropriate threshold \(T_{d}\)
-                                                  for selecting the
-Sorry, but I can't typeset math unless \textfont 2
-and \scriptfont 2 and \scriptscriptfont 2 have all
-the \fontdimen values needed in math symbol fonts.
-
-! Math formula deleted: Insufficient symbol fonts.
-\)->\relax \ifmmode \ifinner $
-                              \else \@badmath \fi \else \@badmath \fi 
-l.573 ...}1{]} will be used. The limit \(T_{d,j}\)
-                                                   is calculated
-Sorry, but I can't typeset math unless \textfont 2
-and \scriptfont 2 and \scriptscriptfont 2 have all
-the \fontdimen values needed in math symbol fonts.
-
-! Math formula deleted: Insufficient symbol fonts.
-\endmathdisplay ...badmath \fi \endmathdisplay@a $
-                                                  $\global \let \df@label \@...
-l.577 \[\sigma = \frac{1}{0.6745}~MAD(|c|) \]
-                                             
-Sorry, but I can't typeset math unless \textfont 2
-and \scriptfont 2 and \scriptscriptfont 2 have all
-the \fontdimen values needed in math symbol fonts.
-
-! Math formula deleted: Insufficient symbol fonts.
-\endmathdisplay ...badmath \fi \endmathdisplay@a $
-                                                  $\global \let \df@label \@...
-l.579 \[T_{d} = \sigma\sqrt{2\log{n}} \]
-                                        
-Sorry, but I can't typeset math unless \textfont 2
-and \scriptfont 2 and \scriptscriptfont 2 have all
-the \fontdimen values needed in math symbol fonts.
-
-! Math formula deleted: Insufficient symbol fonts.
-\)->\relax \ifmmode \ifinner $
-                              \else \@badmath \fi \else \@badmath \fi 
-l.581 where \(n\)
-                  is the lenght of the signal. The selected mother wavelet
-Sorry, but I can't typeset math unless \textfont 2
-and \scriptfont 2 and \scriptscriptfont 2 have all
-the \fontdimen values needed in math symbol fonts.
-
-<signal_phase_denoised.png, id=59, 1300.86pt x 578.16pt>
+[3 <./train_data_dist_twosided.png> <./signal_phase_example.png>] [4 <./signal_
+fault_normal_raw.png>]
+LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 540.
+<signal_phase_denoised.png, id=152, 1300.86pt x 578.16pt>
 File: signal_phase_denoised.png Graphic file (type png)
-
 <use signal_phase_denoised.png>
-Package pdftex.def Info: signal_phase_denoised.png used on input line 592.
+Package pdftex.def Info: signal_phase_denoised.png  used on input line 595.
 (pdftex.def)             Requested size: 375.80544pt x 167.0181pt.
- [5]
-<signal_peaks.png, id=73, 867.24pt x 433.62pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5]
+<signal_peaks.png, id=167, 867.24pt x 433.62pt>
 File: signal_peaks.png Graphic file (type png)
- <use signal_peaks.png>
-Package pdftex.def Info: signal_peaks.png used on input line 665.
+<use signal_peaks.png>
+Package pdftex.def Info: signal_peaks.png  used on input line 667.
 (pdftex.def)             Requested size: 375.80544pt x 187.90198pt.
 
-<signal_peak_zoom.png, id=74, 867.24pt x 433.62pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<signal_peak_zoom.png, id=168, 867.24pt x 433.62pt>
 File: signal_peak_zoom.png Graphic file (type png)
- <use signal_peak_zoom.png>
-Package pdftex.def Info: signal_peak_zoom.png used on input line 671.
+<use signal_peak_zoom.png>
+Package pdftex.def Info: signal_peak_zoom.png  used on input line 674.
 (pdftex.def)             Requested size: 375.80544pt x 187.90198pt.
 
-[6 <C:/Users/Victor/git/Udacity/mlen-capstone-udacity/Report/signal_phase_denoi
-sed.png>] [7 <C:/Users/Victor/git/Udacity/mlen-capstone-udacity/Report/signal_p
-eaks.png> <C:/Users/Victor/git/Udacity/mlen-capstone-udacity/Report/signal_peak
-_zoom.png>] <signal_fault_normal_psd_denoised.png, id=93, 867.24pt x 578.16pt>
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6 <./signal_phase_denoised.png>]
+<signal_fault_normal_psd_denoised.png, id=180, 867.24pt x 578.16pt>
 File: signal_fault_normal_psd_denoised.png Graphic file (type png)
-
 <use signal_fault_normal_psd_denoised.png>
-Package pdftex.def Info: signal_fault_normal_psd_denoised.png used on input lin
-e 704.
+Package pdftex.def Info: signal_fault_normal_psd_denoised.png  used on input li
+ne 708.
 (pdftex.def)             Requested size: 375.80544pt x 250.53596pt.
 
-Overfull \hbox (29.24463pt too wide) in paragraph at lines 740--741
-[]\T1/ppl/m/n/10.95 number_of_peaks_p1|  
- []
 
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 742--743
-[]\T1/ppl/m/n/10.95 3.282633e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 744--745
-[]\T1/ppl/m/n/10.95 7.949112e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 746--747
-[]\T1/ppl/m/n/10.95 0.000000e+00|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 748--749
-[]\T1/ppl/m/n/10.95 3.000000e+00|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 750--751
-[]\T1/ppl/m/n/10.95 1.000000e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 752--753
-[]\T1/ppl/m/n/10.95 3.000000e+01|  
- []
-
-
-Overfull \hbox (19.90614pt too wide) in paragraph at lines 754--755
-[]\T1/ppl/m/n/10.95 1144.000000|  
- []
-
-
-Overfull \hbox (29.24463pt too wide) in paragraph at lines 757--758
-[]\T1/ppl/m/n/10.95 number_of_peaks_p2|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 759--760
-[]\T1/ppl/m/n/10.95 3.183942e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 761--762
-[]\T1/ppl/m/n/10.95 8.018707e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 763--764
-[]\T1/ppl/m/n/10.95 0.000000e+00|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 765--766
-[]\T1/ppl/m/n/10.95 2.000000e+00|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 767--768
-[]\T1/ppl/m/n/10.95 9.000000e+00|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 769--770
-[]\T1/ppl/m/n/10.95 2.700000e+01|  
- []
-
-
-Overfull \hbox (19.90614pt too wide) in paragraph at lines 771--772
-[]\T1/ppl/m/n/10.95 1164.000000|  
- []
-
-
-Overfull \hbox (29.24463pt too wide) in paragraph at lines 774--775
-[]\T1/ppl/m/n/10.95 number_of_peaks_p3|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 776--777
-[]\T1/ppl/m/n/10.95 3.176102e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 778--779
-[]\T1/ppl/m/n/10.95 7.946652e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 780--781
-[]\T1/ppl/m/n/10.95 0.000000e+00|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 782--783
-[]\T1/ppl/m/n/10.95 2.000000e+00|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 784--785
-[]\T1/ppl/m/n/10.95 9.000000e+00|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 786--787
-[]\T1/ppl/m/n/10.95 2.800000e+01|  
- []
-
-
-Overfull \hbox (19.90614pt too wide) in paragraph at lines 788--789
-[]\T1/ppl/m/n/10.95 1155.000000|  
- []
-
-
-Overfull \hbox (29.24463pt too wide) in paragraph at lines 791--792
-[]\T1/ppl/m/n/10.95 number_of_peaks_p4|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 793--794
-[]\T1/ppl/m/n/10.95 3.221247e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 795--796
-[]\T1/ppl/m/n/10.95 8.259928e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 797--798
-[]\T1/ppl/m/n/10.95 0.000000e+00|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 799--800
-[]\T1/ppl/m/n/10.95 2.000000e+00|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 801--802
-[]\T1/ppl/m/n/10.95 9.000000e+00|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 803--804
-[]\T1/ppl/m/n/10.95 2.800000e+01|  
- []
-
-
-Overfull \hbox (19.90614pt too wide) in paragraph at lines 805--806
-[]\T1/ppl/m/n/10.95 1146.000000|  
- []
-
-
-Overfull \hbox (52.16287pt too wide) in paragraph at lines 808--809
-[]\T1/ppl/m/n/10.95 mean_width_of_peaks_p1|  
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 810--811
-[]\T1/ppl/m/n/10.95 8.630635e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 812--813
-[]\T1/ppl/m/n/10.95 1.748492e- 
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 814--815
-[]\T1/ppl/m/n/10.95 0.000000e+00|  
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 816--817
-[]\T1/ppl/m/n/10.95 7.329588e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 818--819
-[]\T1/ppl/m/n/10.95 2.927462e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 820--821
-[]\T1/ppl/m/n/10.95 8.171508e- 
- []
-
-
-Overfull \hbox (3.48117pt too wide) in paragraph at lines 822--823
-[]\T1/ppl/m/n/10.95 0.019447|  
- []
-
-
-Overfull \hbox (52.16287pt too wide) in paragraph at lines 825--826
-[]\T1/ppl/m/n/10.95 mean_width_of_peaks_p2|  
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 827--828
-[]\T1/ppl/m/n/10.95 8.074817e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 829--830
-[]\T1/ppl/m/n/10.95 1.542744e- 
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 831--832
-[]\T1/ppl/m/n/10.95 0.000000e+00|  
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 833--834
-[]\T1/ppl/m/n/10.95 4.746766e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 835--836
-[]\T1/ppl/m/n/10.95 3.000340e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 837--838
-[]\T1/ppl/m/n/10.95 8.291256e- 
- []
-
-
-Overfull \hbox (3.48117pt too wide) in paragraph at lines 839--840
-[]\T1/ppl/m/n/10.95 0.019327|  
- []
-
-
-Overfull \hbox (52.16287pt too wide) in paragraph at lines 842--843
-[]\T1/ppl/m/n/10.95 mean_width_of_peaks_p4|  
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 844--845
-[]\T1/ppl/m/n/10.95 7.308763e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 846--847
-[]\T1/ppl/m/n/10.95 1.456980e- 
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 848--849
-[]\T1/ppl/m/n/10.95 0.000000e+00|  
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 850--851
-[]\T1/ppl/m/n/10.95 4.004865e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 852--853
-[]\T1/ppl/m/n/10.95 2.600330e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 854--855
-[]\T1/ppl/m/n/10.95 7.639245e- 
- []
-
-
-Overfull \hbox (3.48117pt too wide) in paragraph at lines 856--857
-[]\T1/ppl/m/n/10.95 0.018890|  
- []
-
-
-Overfull \hbox (52.16287pt too wide) in paragraph at lines 859--860
-[]\T1/ppl/m/n/10.95 mean_width_of_peaks_p3|  
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 861--862
-[]\T1/ppl/m/n/10.95 5.046811e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 863--864
-[]\T1/ppl/m/n/10.95 1.226370e- 
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 865--866
-[]\T1/ppl/m/n/10.95 0.000000e+00|  
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 867--868
-[]\T1/ppl/m/n/10.95 2.521847e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 869--870
-[]\T1/ppl/m/n/10.95 1.673808e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 871--872
-[]\T1/ppl/m/n/10.95 4.927585e- 
- []
-
-
-Overfull \hbox (3.48117pt too wide) in paragraph at lines 873--874
-[]\T1/ppl/m/n/10.95 0.019500|  
- []
-
-
-Overfull \hbox (46.19518pt too wide) in paragraph at lines 876--877
-[]\T1/ppl/m/n/10.95 max_width_of_peaks_p1|  
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 878--879
-[]\T1/ppl/m/n/10.95 3.334883e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 880--881
-[]\T1/ppl/m/n/10.95 3.637011e- 
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 882--883
-[]\T1/ppl/m/n/10.95 0.000000e+00|  
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 884--885
-[]\T1/ppl/m/n/10.95 6.413317e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 886--887
-[]\T1/ppl/m/n/10.95 2.265090e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 888--889
-[]\T1/ppl/m/n/10.95 4.740015e- 
- []
-
-
-Overfull \hbox (3.48117pt too wide) in paragraph at lines 890--891
-[]\T1/ppl/m/n/10.95 0.019490|  
- []
-
-
-Overfull \hbox (46.19518pt too wide) in paragraph at lines 893--894
-[]\T1/ppl/m/n/10.95 max_width_of_peaks_p2|  
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 895--896
-[]\T1/ppl/m/n/10.95 3.302283e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 897--898
-[]\T1/ppl/m/n/10.95 3.350480e- 
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 899--900
-[]\T1/ppl/m/n/10.95 0.000000e+00|  
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 901--902
-[]\T1/ppl/m/n/10.95 2.658889e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 903--904
-[]\T1/ppl/m/n/10.95 2.482477e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 905--906
-[]\T1/ppl/m/n/10.95 5.477506e- 
- []
-
-
-Overfull \hbox (3.48117pt too wide) in paragraph at lines 907--908
-[]\T1/ppl/m/n/10.95 0.019327|  
- []
-
-
-Overfull \hbox (46.19518pt too wide) in paragraph at lines 910--911
-[]\T1/ppl/m/n/10.95 max_width_of_peaks_p3|  
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 912--913
-[]\T1/ppl/m/n/10.95 3.100975e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 914--915
-[]\T1/ppl/m/n/10.95 3.255219e- 
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 916--917
-[]\T1/ppl/m/n/10.95 0.000000e+00|  
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 918--919
-[]\T1/ppl/m/n/10.95 2.220042e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 920--921
-[]\T1/ppl/m/n/10.95 2.174817e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 922--923
-[]\T1/ppl/m/n/10.95 5.019026e- 
- []
-
-
-Overfull \hbox (3.48117pt too wide) in paragraph at lines 924--925
-[]\T1/ppl/m/n/10.95 0.019500|  
- []
-
-
-Overfull \hbox (46.19518pt too wide) in paragraph at lines 927--928
-[]\T1/ppl/m/n/10.95 max_width_of_peaks_p4|  
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 929--930
-[]\T1/ppl/m/n/10.95 2.410394e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 931--932
-[]\T1/ppl/m/n/10.95 3.230426e- 
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 933--934
-[]\T1/ppl/m/n/10.95 0.000000e+00|  
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 935--936
-[]\T1/ppl/m/n/10.95 8.497598e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 937--938
-[]\T1/ppl/m/n/10.95 1.173368e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 939--940
-[]\T1/ppl/m/n/10.95 3.264513e- 
- []
-
-
-Overfull \hbox (3.48117pt too wide) in paragraph at lines 941--942
-[]\T1/ppl/m/n/10.95 0.019573|  
- []
-
-
-Overfull \hbox (44.62926pt too wide) in paragraph at lines 944--945
-[]\T1/ppl/m/n/10.95 min_width_of_peaks_p1|  
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 946--947
-[]\T1/ppl/m/n/10.95 2.728285e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 948--949
-[]\T1/ppl/m/n/10.95 1.509799e- 
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 950--951
-[]\T1/ppl/m/n/10.95 0.000000e+00|  
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 952--953
-[]\T1/ppl/m/n/10.95 4.097289e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 954--955
-[]\T1/ppl/m/n/10.95 6.645745e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 956--957
-[]\T1/ppl/m/n/10.95 2.422277e- 
- []
-
-
-Overfull \hbox (3.48117pt too wide) in paragraph at lines 958--959
-[]\T1/ppl/m/n/10.95 0.019447|  
- []
-
-
-Overfull \hbox (44.62926pt too wide) in paragraph at lines 961--962
-[]\T1/ppl/m/n/10.95 min_width_of_peaks_p2|  
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 963--964
-[]\T1/ppl/m/n/10.95 2.582206e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 965--966
-[]\T1/ppl/m/n/10.95 1.327438e- 
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 967--968
-[]\T1/ppl/m/n/10.95 0.000000e+00|  
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 969--970
-[]\T1/ppl/m/n/10.95 3.885520e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 971--972
-[]\T1/ppl/m/n/10.95 4.552797e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 973--974
-[]\T1/ppl/m/n/10.95 1.061528e- 
- []
-
-
-Overfull \hbox (3.48117pt too wide) in paragraph at lines 975--976
-[]\T1/ppl/m/n/10.95 0.019327|  
- []
-
-
-Overfull \hbox (44.62926pt too wide) in paragraph at lines 978--979
-[]\T1/ppl/m/n/10.95 min_width_of_peaks_p4|  
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 980--981
-[]\T1/ppl/m/n/10.95 2.262931e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 982--983
-[]\T1/ppl/m/n/10.95 1.252956e- 
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 984--985
-[]\T1/ppl/m/n/10.95 0.000000e+00|  
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 986--987
-[]\T1/ppl/m/n/10.95 3.830487e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 988--989
-[]\T1/ppl/m/n/10.95 4.486472e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 990--991
-[]\T1/ppl/m/n/10.95 6.839709e- 
- []
-
-
-Overfull \hbox (3.48117pt too wide) in paragraph at lines 992--993
-[]\T1/ppl/m/n/10.95 0.018890|  
- []
-
-
-Overfull \hbox (44.62926pt too wide) in paragraph at lines 995--996
-[]\T1/ppl/m/n/10.95 min_width_of_peaks_p3|  
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 997--998
-[]\T1/ppl/m/n/10.95 1.358825e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 999--1000
-[]\T1/ppl/m/n/10.95 1.051550e- 
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1001--1002
-[]\T1/ppl/m/n/10.95 0.000000e+00|  
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1003--1004
-[]\T1/ppl/m/n/10.95 3.830376e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1005--1006
-[]\T1/ppl/m/n/10.95 4.363012e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1007--1008
-[]\T1/ppl/m/n/10.95 8.761062e- 
- []
-
-
-Overfull \hbox (3.48117pt too wide) in paragraph at lines 1009--1010
-[]\T1/ppl/m/n/10.95 0.019500|  
- []
-
-
-Overfull \hbox (54.04611pt too wide) in paragraph at lines 1012--1013
-[]\T1/ppl/m/n/10.95 mean_height_of_peaks_p1|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1014--1015
-[]\T1/ppl/m/n/10.95 2.202472e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1016--1017
-[]\T1/ppl/m/n/10.95 1.713153e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1018--1019
-[]\T1/ppl/m/n/10.95 0.000000e+00|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1020--1021
-[]\T1/ppl/m/n/10.95 1.247731e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1022--1023
-[]\T1/ppl/m/n/10.95 1.664245e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1024--1025
-[]\T1/ppl/m/n/10.95 2.664678e+01|  
- []
-
-
-Overfull \hbox (14.43115pt too wide) in paragraph at lines 1026--1027
-[]\T1/ppl/m/n/10.95 233.441267|  
- []
-
-
-Overfull \hbox (54.04611pt too wide) in paragraph at lines 1029--1030
-[]\T1/ppl/m/n/10.95 mean_height_of_peaks_p2|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1031--1032
-[]\T1/ppl/m/n/10.95 2.131062e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1033--1034
-[]\T1/ppl/m/n/10.95 1.857717e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1035--1036
-[]\T1/ppl/m/n/10.95 0.000000e+00|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1037--1038
-[]\T1/ppl/m/n/10.95 1.120602e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1039--1040
-[]\T1/ppl/m/n/10.95 1.648475e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1041--1042
-[]\T1/ppl/m/n/10.95 2.836656e+01|  
- []
-
-
-Overfull \hbox (14.43115pt too wide) in paragraph at lines 1043--1044
-[]\T1/ppl/m/n/10.95 156.574158|  
- []
-
-
-Overfull \hbox (54.04611pt too wide) in paragraph at lines 1046--1047
-[]\T1/ppl/m/n/10.95 mean_height_of_peaks_p4|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1048--1049
-[]\T1/ppl/m/n/10.95 2.123533e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1050--1051
-[]\T1/ppl/m/n/10.95 1.899801e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1052--1053
-[]\T1/ppl/m/n/10.95 0.000000e+00|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1054--1055
-[]\T1/ppl/m/n/10.95 1.114737e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1056--1057
-[]\T1/ppl/m/n/10.95 1.637225e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1058--1059
-[]\T1/ppl/m/n/10.95 2.833730e+01|  
- []
-
-
-Overfull \hbox (14.43115pt too wide) in paragraph at lines 1060--1061
-[]\T1/ppl/m/n/10.95 170.794998|  
- []
-
-
-Overfull \hbox (54.04611pt too wide) in paragraph at lines 1063--1064
-[]\T1/ppl/m/n/10.95 mean_height_of_peaks_p3|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1065--1066
-[]\T1/ppl/m/n/10.95 2.076621e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1067--1068
-[]\T1/ppl/m/n/10.95 1.846094e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1069--1070
-[]\T1/ppl/m/n/10.95 0.000000e+00|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1071--1072
-[]\T1/ppl/m/n/10.95 1.106729e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1073--1074
-[]\T1/ppl/m/n/10.95 1.607933e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1075--1076
-[]\T1/ppl/m/n/10.95 2.746802e+01|  
- []
-
-
-Overfull \hbox (14.43115pt too wide) in paragraph at lines 1077--1078
-[]\T1/ppl/m/n/10.95 150.854187|  
- []
-
-
-Overfull \hbox (48.07841pt too wide) in paragraph at lines 1080--1081
-[]\T1/ppl/m/n/10.95 max_height_of_peaks_p1|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1082--1083
-[]\T1/ppl/m/n/10.95 6.781429e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1084--1085
-[]\T1/ppl/m/n/10.95 8.039033e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1086--1087
-[]\T1/ppl/m/n/10.95 0.000000e+00|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1088--1089
-[]\T1/ppl/m/n/10.95 1.577333e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1090--1091
-[]\T1/ppl/m/n/10.95 3.055797e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1092--1093
-[]\T1/ppl/m/n/10.95 8.173614e+01|  
- []
-
-
-Overfull \hbox (14.43115pt too wide) in paragraph at lines 1094--1095
-[]\T1/ppl/m/n/10.95 304.033012|  
- []
-
-
-Overfull \hbox (48.07841pt too wide) in paragraph at lines 1097--1098
-[]\T1/ppl/m/n/10.95 max_height_of_peaks_p2|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1099--1100
-[]\T1/ppl/m/n/10.95 6.750096e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1101--1102
-[]\T1/ppl/m/n/10.95 8.359665e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1103--1104
-[]\T1/ppl/m/n/10.95 0.000000e+00|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1105--1106
-[]\T1/ppl/m/n/10.95 1.273369e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1107--1108
-[]\T1/ppl/m/n/10.95 2.983007e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1109--1110
-[]\T1/ppl/m/n/10.95 8.508742e+01|  
- []
-
-
-Overfull \hbox (14.43115pt too wide) in paragraph at lines 1111--1112
-[]\T1/ppl/m/n/10.95 323.740506|  
- []
-
-
-Overfull \hbox (48.07841pt too wide) in paragraph at lines 1114--1115
-[]\T1/ppl/m/n/10.95 max_height_of_peaks_p4|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1116--1117
-[]\T1/ppl/m/n/10.95 6.759822e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1118--1119
-[]\T1/ppl/m/n/10.95 8.408626e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1120--1121
-[]\T1/ppl/m/n/10.95 0.000000e+00|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1122--1123
-[]\T1/ppl/m/n/10.95 1.254084e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1124--1125
-[]\T1/ppl/m/n/10.95 2.887481e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1126--1127
-[]\T1/ppl/m/n/10.95 8.683218e+01|  
- []
-
-
-Overfull \hbox (14.43115pt too wide) in paragraph at lines 1128--1129
-[]\T1/ppl/m/n/10.95 330.216528|  
- []
-
-
-Overfull \hbox (48.07841pt too wide) in paragraph at lines 1131--1132
-[]\T1/ppl/m/n/10.95 max_height_of_peaks_p3|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1133--1134
-[]\T1/ppl/m/n/10.95 6.609730e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1135--1136
-[]\T1/ppl/m/n/10.95 8.276208e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1137--1138
-[]\T1/ppl/m/n/10.95 0.000000e+00|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1139--1140
-[]\T1/ppl/m/n/10.95 1.227234e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1141--1142
-[]\T1/ppl/m/n/10.95 2.786274e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1143--1144
-[]\T1/ppl/m/n/10.95 8.463833e+01|  
- []
-
-
-Overfull \hbox (14.43115pt too wide) in paragraph at lines 1145--1146
-[]\T1/ppl/m/n/10.95 318.762537|  
- []
-
-
-Overfull \hbox (46.5125pt too wide) in paragraph at lines 1148--1149
-[]\T1/ppl/m/n/10.95 min_height_of_peaks_p1|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1150--1151
-[]\T1/ppl/m/n/10.95 1.039030e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1152--1153
-[]\T1/ppl/m/n/10.95 5.024357e+00|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1154--1155
-[]\T1/ppl/m/n/10.95 0.000000e+00|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1156--1157
-[]\T1/ppl/m/n/10.95 1.004593e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1158--1159
-[]\T1/ppl/m/n/10.95 1.026697e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1160--1161
-[]\T1/ppl/m/n/10.95 1.097832e+01|  
- []
-
-
-Overfull \hbox (14.43115pt too wide) in paragraph at lines 1162--1163
-[]\T1/ppl/m/n/10.95 233.441267|  
- []
-
-
-Overfull \hbox (46.5125pt too wide) in paragraph at lines 1165--1166
-[]\T1/ppl/m/n/10.95 min_height_of_peaks_p2|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1167--1168
-[]\T1/ppl/m/n/10.95 9.774325e+00|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1169--1170
-[]\T1/ppl/m/n/10.95 6.549486e+00|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1171--1172
-[]\T1/ppl/m/n/10.95 0.000000e+00|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1173--1174
-[]\T1/ppl/m/n/10.95 1.001784e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1175--1176
-[]\T1/ppl/m/n/10.95 1.017724e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1177--1178
-[]\T1/ppl/m/n/10.95 1.082135e+01|  
- []
-
-
-Overfull \hbox (14.43115pt too wide) in paragraph at lines 1179--1180
-[]\T1/ppl/m/n/10.95 156.574158|  
- []
-
-
-Overfull \hbox (46.5125pt too wide) in paragraph at lines 1182--1183
-[]\T1/ppl/m/n/10.95 min_height_of_peaks_p4|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1184--1185
-[]\T1/ppl/m/n/10.95 9.641617e+00|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1186--1187
-[]\T1/ppl/m/n/10.95 6.408897e+00|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1188--1189
-[]\T1/ppl/m/n/10.95 0.000000e+00|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1190--1191
-[]\T1/ppl/m/n/10.95 1.001557e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1192--1193
-[]\T1/ppl/m/n/10.95 1.017939e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1194--1195
-[]\T1/ppl/m/n/10.95 1.080096e+01|  
- []
-
-
-Overfull \hbox (14.43115pt too wide) in paragraph at lines 1196--1197
-[]\T1/ppl/m/n/10.95 140.428233|  
- []
-
-
-Overfull \hbox (46.5125pt too wide) in paragraph at lines 1199--1200
-[]\T1/ppl/m/n/10.95 min_height_of_peaks_p3|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1201--1202
-[]\T1/ppl/m/n/10.95 9.509654e+00|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1203--1204
-[]\T1/ppl/m/n/10.95 6.196550e+00|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1205--1206
-[]\T1/ppl/m/n/10.95 0.000000e+00|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1207--1208
-[]\T1/ppl/m/n/10.95 1.001436e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1209--1210
-[]\T1/ppl/m/n/10.95 1.015763e+01|  
- []
-
-
-Overfull \hbox (21.61676pt too wide) in paragraph at lines 1211--1212
-[]\T1/ppl/m/n/10.95 1.078116e+01|  
- []
-
-
-Overfull \hbox (14.43115pt too wide) in paragraph at lines 1213--1214
-[]\T1/ppl/m/n/10.95 150.854187|  
- []
-
-
-Overfull \hbox (14.1666pt too wide) in paragraph at lines 1216--1217
-[]\T1/ppl/m/n/10.95 sum_spectrum_p1|  
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1218--1219
-[]\T1/ppl/m/n/10.95 3.530868e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1220--1221
-[]\T1/ppl/m/n/10.95 5.352646e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1222--1223
-[]\T1/ppl/m/n/10.95 1.307255e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1224--1225
-[]\T1/ppl/m/n/10.95 3.189693e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1226--1227
-[]\T1/ppl/m/n/10.95 1.629760e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1228--1229
-[]\T1/ppl/m/n/10.95 4.491362e- 
- []
-
-
-Overfull \hbox (3.48117pt too wide) in paragraph at lines 1230--1231
-[]\T1/ppl/m/n/10.95 0.000072|  
- []
-
-
-Overfull \hbox (14.04617pt too wide) in paragraph at lines 1233--1234
-[]\T1/ppl/m/n/10.95 max_spectrum_p1|  
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1235--1236
-[]\T1/ppl/m/n/10.95 1.086544e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1237--1238
-[]\T1/ppl/m/n/10.95 1.631758e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1239--1240
-[]\T1/ppl/m/n/10.95 1.241261e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1241--1242
-[]\T1/ppl/m/n/10.95 4.851728e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1243--1244
-[]\T1/ppl/m/n/10.95 5.659098e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1245--1246
-[]\T1/ppl/m/n/10.95 1.460518e- 
- []
-
-
-Overfull \hbox (3.48117pt too wide) in paragraph at lines 1247--1248
-[]\T1/ppl/m/n/10.95 0.000033|  
- []
-
-
-Overfull \hbox (20.01387pt too wide) in paragraph at lines 1250--1251
-[]\T1/ppl/m/n/10.95 mean_spectrum_p1|  
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1252--1253
-[]\T1/ppl/m/n/10.95 1.103396e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1254--1255
-[]\T1/ppl/m/n/10.95 1.672702e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1256--1257
-[]\T1/ppl/m/n/10.95 4.085171e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1258--1259
-[]\T1/ppl/m/n/10.95 9.967790e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1260--1261
-[]\T1/ppl/m/n/10.95 5.092999e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1262--1263
-[]\T1/ppl/m/n/10.95 1.403551e- 
- []
-
-
-Overfull \hbox (3.48117pt too wide) in paragraph at lines 1264--1265
-[]\T1/ppl/m/n/10.95 0.000002|  
- []
-
-
-Overfull \hbox (14.1666pt too wide) in paragraph at lines 1267--1268
-[]\T1/ppl/m/n/10.95 sum_spectrum_p2|  
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1269--1270
-[]\T1/ppl/m/n/10.95 6.212455e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1271--1272
-[]\T1/ppl/m/n/10.95 2.766406e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1273--1274
-[]\T1/ppl/m/n/10.95 1.171639e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1275--1276
-[]\T1/ppl/m/n/10.95 1.764359e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1277--1278
-[]\T1/ppl/m/n/10.95 7.864020e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1279--1280
-[]\T1/ppl/m/n/10.95 2.491131e- 
- []
-
-
-Overfull \hbox (3.48117pt too wide) in paragraph at lines 1281--1282
-[]\T1/ppl/m/n/10.95 0.000071|  
- []
-
-
-Overfull \hbox (14.04617pt too wide) in paragraph at lines 1284--1285
-[]\T1/ppl/m/n/10.95 max_spectrum_p2|  
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1286--1287
-[]\T1/ppl/m/n/10.95 7.901966e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1288--1289
-[]\T1/ppl/m/n/10.95 4.519965e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1290--1291
-[]\T1/ppl/m/n/10.95 1.704961e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1292--1293
-[]\T1/ppl/m/n/10.95 1.339236e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1294--1295
-[]\T1/ppl/m/n/10.95 6.805220e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1296--1297
-[]\T1/ppl/m/n/10.95 2.415703e- 
- []
-
-
-Overfull \hbox (3.48117pt too wide) in paragraph at lines 1298--1299
-[]\T1/ppl/m/n/10.95 0.000012|  
- []
-
-
-Overfull \hbox (20.01387pt too wide) in paragraph at lines 1301--1302
-[]\T1/ppl/m/n/10.95 mean_spectrum_p2|  
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1303--1304
-[]\T1/ppl/m/n/10.95 1.941392e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1305--1306
-[]\T1/ppl/m/n/10.95 8.645020e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1307--1308
-[]\T1/ppl/m/n/10.95 3.661373e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1309--1310
-[]\T1/ppl/m/n/10.95 5.513623e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1311--1312
-[]\T1/ppl/m/n/10.95 2.457506e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1313--1314
-[]\T1/ppl/m/n/10.95 7.784784e- 
- []
-
-
-Overfull \hbox (3.48117pt too wide) in paragraph at lines 1315--1316
-[]\T1/ppl/m/n/10.95 0.000002|  
- []
-
-
-Overfull \hbox (14.1666pt too wide) in paragraph at lines 1318--1319
-[]\T1/ppl/m/n/10.95 sum_spectrum_p3|  
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1320--1321
-[]\T1/ppl/m/n/10.95 2.237456e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1322--1323
-[]\T1/ppl/m/n/10.95 9.254183e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1324--1325
-[]\T1/ppl/m/n/10.95 3.019963e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1326--1327
-[]\T1/ppl/m/n/10.95 8.739905e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1328--1329
-[]\T1/ppl/m/n/10.95 7.283541e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1330--1331
-[]\T1/ppl/m/n/10.95 3.913508e- 
- []
-
-
-Overfull \hbox (3.48117pt too wide) in paragraph at lines 1332--1333
-[]\T1/ppl/m/n/10.95 0.000201|  
- []
-
-
-Overfull \hbox (14.04617pt too wide) in paragraph at lines 1335--1336
-[]\T1/ppl/m/n/10.95 max_spectrum_p3|  
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1337--1338
-[]\T1/ppl/m/n/10.95 2.665335e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1339--1340
-[]\T1/ppl/m/n/10.95 9.447264e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1341--1342
-[]\T1/ppl/m/n/10.95 2.735203e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1343--1344
-[]\T1/ppl/m/n/10.95 8.018398e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1345--1346
-[]\T1/ppl/m/n/10.95 4.810539e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1347--1348
-[]\T1/ppl/m/n/10.95 3.049029e- 
- []
-
-
-Overfull \hbox (3.48117pt too wide) in paragraph at lines 1349--1350
-[]\T1/ppl/m/n/10.95 0.000018|  
- []
-
-
-Overfull \hbox (20.01387pt too wide) in paragraph at lines 1352--1353
-[]\T1/ppl/m/n/10.95 mean_spectrum_p3|  
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1354--1355
-[]\T1/ppl/m/n/10.95 6.992051e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1356--1357
-[]\T1/ppl/m/n/10.95 2.891932e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1358--1359
-[]\T1/ppl/m/n/10.95 9.437383e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1360--1361
-[]\T1/ppl/m/n/10.95 2.731220e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1362--1363
-[]\T1/ppl/m/n/10.95 2.276107e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1364--1365
-[]\T1/ppl/m/n/10.95 1.222971e- 
- []
-
-
-Overfull \hbox (3.48117pt too wide) in paragraph at lines 1366--1367
-[]\T1/ppl/m/n/10.95 0.000006|  
- []
-
-
-Overfull \hbox (14.1666pt too wide) in paragraph at lines 1369--1370
-[]\T1/ppl/m/n/10.95 sum_spectrum_p4|  
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1371--1372
-[]\T1/ppl/m/n/10.95 3.275073e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1373--1374
-[]\T1/ppl/m/n/10.95 9.823578e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1375--1376
-[]\T1/ppl/m/n/10.95 1.564058e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1377--1378
-[]\T1/ppl/m/n/10.95 2.605089e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1379--1380
-[]\T1/ppl/m/n/10.95 8.406483e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1381--1382
-[]\T1/ppl/m/n/10.95 5.844194e- 
- []
-
-
-Overfull \hbox (3.48117pt too wide) in paragraph at lines 1383--1384
-[]\T1/ppl/m/n/10.95 0.000083|  
- []
-
-
-Overfull \hbox (14.04617pt too wide) in paragraph at lines 1386--1387
-[]\T1/ppl/m/n/10.95 max_spectrum_p4|  
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1388--1389
-[]\T1/ppl/m/n/10.95 3.380832e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1390--1391
-[]\T1/ppl/m/n/10.95 1.085624e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1392--1393
-[]\T1/ppl/m/n/10.95 1.621807e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1394--1395
-[]\T1/ppl/m/n/10.95 2.040832e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1396--1397
-[]\T1/ppl/m/n/10.95 4.612339e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1398--1399
-[]\T1/ppl/m/n/10.95 3.418533e- 
- []
-
-
-Overfull \hbox (3.48117pt too wide) in paragraph at lines 1400--1401
-[]\T1/ppl/m/n/10.95 0.000008|  
- []
-
-
-Overfull \hbox (20.01387pt too wide) in paragraph at lines 1403--1404
-[]\T1/ppl/m/n/10.95 mean_spectrum_p4|  
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1405--1406
-[]\T1/ppl/m/n/10.95 1.023460e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1407--1408
-[]\T1/ppl/m/n/10.95 3.069868e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1409--1410
-[]\T1/ppl/m/n/10.95 4.887683e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1411--1412
-[]\T1/ppl/m/n/10.95 8.140903e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1413--1414
-[]\T1/ppl/m/n/10.95 2.627026e- 
- []
-
-
-Overfull \hbox (7.67746pt too wide) in paragraph at lines 1415--1416
-[]\T1/ppl/m/n/10.95 1.826311e- 
- []
-
-
-Overfull \hbox (3.48117pt too wide) in paragraph at lines 1417--1418
-[]\T1/ppl/m/n/10.95 0.000003|  
- []
-
-[8 <C:/Users/Victor/git/Udacity/mlen-capstone-udacity/Report/signal_fault_norma
-l_psd_denoised.png>] [9]
-<dist_minmax_scaled.png, id=107, 867.24pt x 1734.48pt>
+[7 <./signal_peaks.png> <./signal_peak_zoom.png>]
+<dist_minmax_scaled.png, id=191, 867.24pt x 1734.48pt>
 File: dist_minmax_scaled.png Graphic file (type png)
-
 <use dist_minmax_scaled.png>
-Package pdftex.def Info: dist_minmax_scaled.png used on input line 1429.
-(pdftex.def)             Requested size: 375.80544pt x 751.60793pt.
+Package pdftex.def Info: dist_minmax_scaled.png  used on input line 729.
+(pdftex.def)             Requested size: 281.85587pt x 563.69933pt.
 
 
-LaTeX Warning: Float too large for page by 124.77791pt on input line 1431.
+LaTeX Warning: `h' float specifier changed to `ht'.
 
-<dist_minmax_scaled_log.png, id=108, 867.24pt x 1734.48pt>
-File: dist_minmax_scaled_log.png Graphic file (type png)
-
-<use dist_minmax_scaled_log.png>
-Package pdftex.def Info: dist_minmax_scaled_log.png used on input line 1439.
-(pdftex.def)             Requested size: 375.80544pt x 751.60793pt.
-
-
-LaTeX Warning: Float too large for page by 124.77791pt on input line 1441.
-
-<feature_importances.png, id=110, 867.24pt x 433.62pt>
+<feature_importances.png, id=194, 867.24pt x 433.62pt>
 File: feature_importances.png Graphic file (type png)
-
 <use feature_importances.png>
-Package pdftex.def Info: feature_importances.png used on input line 1462.
+Package pdftex.def Info: feature_importances.png  used on input line 758.
 (pdftex.def)             Requested size: 375.80544pt x 187.90198pt.
 
-Underfull \hbox (badness 1635) in paragraph at lines 1466--1474
-\T1/ppl/m/n/10.95 els: \T1/cmtt/m/n/10.95 number_of_peaks_p1\T1/ppl/m/n/10.95 ,
- \T1/cmtt/m/n/10.95 number_of_peaks_p2\T1/ppl/m/n/10.95 , \T1/cmtt/m/n/10.95 nu
-mber_of_peaks_p3\T1/ppl/m/n/10.95 , \T1/cmtt/m/n/10.95 number_of_peaks_p4\T1/pp
-l/m/n/10.95 ,
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+Overfull \hbox (39.13158pt too wide) in paragraph at lines 763--765
+\T1/cmtt/m/n/10.95 max_height_of_peaks_p1\T1/ppl/m/n/10.95 ,\T1/cmtt/m/n/10.95 
+max_height_of_peaks_p2\T1/ppl/m/n/10.95 ,\T1/cmtt/m/n/10.95 max_height_of_peaks
+_p4\T1/ppl/m/n/10.95 ,\T1/cmtt/m/n/10.95 max_height_of_peaks_p3\T1/ppl/m/n/10.9
+5 ,
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 1466--1474
-\T1/cmtt/m/n/10.95 max_height_of_peaks_p1\T1/ppl/m/n/10.95 , \T1/cmtt/m/n/10.95
- max_height_of_peaks_p2\T1/ppl/m/n/10.95 , \T1/cmtt/m/n/10.95 max_height_of_pea
-ks_p4\T1/ppl/m/n/10.95 ,
- []
-
-[10] [11 <C:/Users/Victor/git/Udacity/mlen-capstone-udacity/Report/dist_minmax_
-scaled.png>] [12 <C:/Users/Victor/git/Udacity/mlen-capstone-udacity/Report/dist
-_minmax_scaled_log.png>]
-<model_cross_val_trial.png, id=132, 867.24pt x 433.62pt>
+[8 <./signal_fault_normal_psd_denoised.png>]
+<model_cross_val_trial.png, id=205, 867.24pt x 433.62pt>
 File: model_cross_val_trial.png Graphic file (type png)
-
 <use model_cross_val_trial.png>
-Package pdftex.def Info: model_cross_val_trial.png used on input line 1512.
+Package pdftex.def Info: model_cross_val_trial.png  used on input line 821.
 (pdftex.def)             Requested size: 375.80544pt x 187.90198pt.
- [13 <C:/Users/Victor/git/Udacity/mlen-capstone-udacity/Report/feature_importan
-ces.png> <C:/Users/Victor/git/Udacity/mlen-capstone-udacity/Report/model_cross_
-val_trial.png>]
-<cnf_matrix_testset.png, id=143, 433.62pt x 289.08pt>
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[9] [10 <./dist_minmax_scaled.png>] [11 <./feature_importances.png> <./model_cr
+oss_val_trial.png>]
+<cnf_matrix_testset.png, id=224, 433.62pt x 289.08pt>
 File: cnf_matrix_testset.png Graphic file (type png)
-
 <use cnf_matrix_testset.png>
-Package pdftex.def Info: cnf_matrix_testset.png used on input line 1582.
-(pdftex.def)             Requested size: 346.89647pt x 231.27754pt.
- [14 <C:/Users/Victor/git/Udacity/mlen-capstone-udacity/Report/cnf_matrix_tests
-et.png>]
-<signal_fault_normal_raw_freeform.png, id=156, 867.24pt x 578.16pt>
-File: signal_fault_normal_raw_freeform.png Graphic file (type png)
+Package pdftex.def Info: cnf_matrix_testset.png  used on input line 891.
+(pdftex.def)             Requested size: 375.80544pt x 250.5492pt.
+ [12
 
+ <./cnf_matrix_testset.png>]
+<signal_fault_normal_raw_freeform.png, id=236, 867.24pt x 578.16pt>
+File: signal_fault_normal_raw_freeform.png Graphic file (type png)
 <use signal_fault_normal_raw_freeform.png>
-Package pdftex.def Info: signal_fault_normal_raw_freeform.png used on input lin
-e 1610.
+Package pdftex.def Info: signal_fault_normal_raw_freeform.png  used on input li
+ne 919.
 (pdftex.def)             Requested size: 375.80544pt x 250.53596pt.
- [15 <C:/Users/Victor/git/Udacity/mlen-capstone-udacity/Report/signal_fault_nor
-mal_raw_freeform.png>]
-Overfull \hbox (15.07425pt too wide) in paragraph at lines 1688--1690
+ [13 <./signal_fault_normal_raw_freeform.png>]
+Overfull \hbox (15.07425pt too wide) in paragraph at lines 998--1000
 \T1/ppl/m/n/10.95 [1] http://dspace.vsb.cz/bitstream/handle/10084/133114/VAN431
 _FEI_P1807_1801V001_2018.pdf 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1713.
-[16]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1713.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1023.
+[14]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1023.
+ (report_notebook.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1023.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1023.
 
-(C:\Users\Victor\git\Udacity\mlen-capstone-udacity\Report\report_notebook.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1713.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1713.
-
-
-
-Package rerunfilecheck Warning: File `report_notebook.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `report_notebook.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  DCF5637F65B4E1B52CB0695A30C5E043;1614.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1713.
+Package rerunfilecheck Info: File `report_notebook.out' has not changed.
+(rerunfilecheck)             Checksum: 1391B85021FAB1B6BC51A9F61DB12701;1362.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1023.
  ) 
 Here is how much of TeX's memory you used:
- 9922 strings out of 493921
- 147780 string characters out of 3144874
- 264923 words of memory out of 3000000
- 12980 multiletter control sequences out of 15000+200000
- 20442 words of font info for 49 fonts, out of 3000000 for 9000
- 841 hyphenation exceptions out of 8191
- 36i,6n,38p,291b,446s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\Victor\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600
-\ectt1095.pk>{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc
-}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Pro
-gram Files (x86)/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on report_notebook.pdf (16 pages, 703149 bytes).
+ 11944 strings out of 492946
+ 181678 string characters out of 3125823
+ 279987 words of memory out of 3000000
+ 15525 multiletter control sequences out of 15000+200000
+ 34282 words of font info for 88 fonts, out of 3000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 36i,6n,77p,427b,480s stack positions out of 5000i,500n,10000p,200000b,50000s
+ <C:\Users\Victor\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600
+\ectt1095.pk>{C:/Users/Victor/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips
+/base/8r.enc}<C:/Users/Victor/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
+lic/amsfonts/cm/cmex10.pfb><C:/Users/Victor/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Victor/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Victor/AppData/
+Local/Programs/MiKTeX 2.9/fonts/type1/public/mathpazo/fplmri.pfb><C:/Users/Vict
+or/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Us
+ers/Victor/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pf
+b><C:/Users/Victor/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/palatino/u
+plri8a.pfb>
+Output written on report_notebook.pdf (14 pages, 586396 bytes).
 PDF statistics:
- 259 PDF objects out of 1000 (max. 8388607)
- 92 named destinations out of 1000 (max. 500000)
- 66 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 348 PDF objects out of 1000 (max. 8388607)
+ 89 named destinations out of 1000 (max. 500000)
+ 237 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -24,21 +24,20 @@
     % We will generate all images so they have a width \maxwidth. This means
     % that they will get their normal width if they fit onto the page, but
     % are scaled down if they would overflow the margins.
-    \makeatletter
-    \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth
-    \else\Gin@nat@width\fi}
-    \makeatother
-    \let\Oldincludegraphics\includegraphics
+    %\makeatletter
+    %\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth
+    %\else\Gin@nat@width\fi}
+    %\makeatother
+    %\let\Oldincludegraphics\includegraphics
     % Set max figure width to be 80% of text width, for now hardcoded.
-    \renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=.8\maxwidth]{#1}}
+    %\renewcommand{\includegraphics}[1]{\Oldincludegraphics[width=.6\maxwidth]{#1}}
     % Ensure that by default, figures have no caption (until we provide a
     % proper Figure object with a Caption API and a way to capture that
     % in the conversion process - todo).
     \usepackage{caption}
-    \DeclareCaptionLabelFormat{nolabel}{}
-    \captionsetup{labelformat=nolabel}
+ 
 
-
+    \usepackage{adjustbox} % Used to constrain images to a maximum size 
     \usepackage{xcolor} % Allow colors to be defined
     \usepackage{enumerate} % Needed for markdown enumerations to work
     \usepackage{geometry} % Used to adjust the document margins
@@ -49,11 +48,10 @@
     \AtBeginDocument{%
         \def\PYZsq{\textquotesingle}% Upright quotes in Pygmentized code
     }
-
+    \usepackage{upquote} % Upright quotes for verbatim code
     \usepackage{eurosym} % defines \euro
-    \usepackage{amsmath}
-    \usepackage{amsthm,amsfonts}
-    \usepackage[latin1]{inputenc} % Allow utf-8 characters in the tex document
+    \usepackage[mathletters]{ucs} % Extended unicode (utf-8) support
+    \usepackage[utf8x]{inputenc} % Allow utf-8 characters in the tex document
     \usepackage{fancyvrb} % verbatim replacement that allows latex
     \usepackage{grffile} % extends the file name processing of package graphics 
                          % to support a larger range 
@@ -64,9 +62,11 @@
     \usepackage{longtable} % longtable support required by pandoc >1.10
     \usepackage{booktabs}  % table support for pandoc > 1.12.2
     \usepackage[inline]{enumitem} % IRkernel/repr support (it uses the enumerate* environment)
+    \usepackage[normalem]{ulem} % ulem is needed to support strikethroughs (\sout)
+                                % normalem makes italics be italics, not underlines
     
 
-    
+    \usepackage{graphicx}
     
     % Colors for the hyperref package
     \definecolor{urlcolor}{rgb}{0,.145,.698}
@@ -140,7 +140,7 @@
     \def\gt{>}
     \def\lt{<}
     % Document parameters
-    \title{report\_notebook}
+    \title{Report}
     
     
     
@@ -280,21 +280,19 @@
 
     
     \hypertarget{machine-learning-engineer-nanodegree}{%
-\section{Machine Learning Engineer
+\section*{Machine Learning Engineer
 Nanodegree}\label{machine-learning-engineer-nanodegree}}
 
 \hypertarget{capstone-project}{%
-\subsection{Capstone Project}\label{capstone-project}}
+\subsection*{Capstone Project}\label{capstone-project}}
 
 Victor São Paulo Ruela
 
-February 5th, 2019
-
 \hypertarget{i.-definition}{%
-\subsection{I. Definition}\label{i.-definition}}
+\section{Definition}\label{i.-definition}}
 
 \hypertarget{project-overview}{%
-\subsubsection{Project Overview}\label{project-overview}}
+\subsection{Project Overview}\label{project-overview}}
 
 Partial Discharge (PD) signals are electrical discharges that can occur
 inside the insulation of high voltage equipments. These signals have a
@@ -312,17 +310,16 @@ faults, the level of damage, local of occurrence and possible causes?
 These are tasks that can be achieve with signal processing techniques
 and machine learning algorithms.
 
-The dataset that is going to be used is available from the VSB Power
-Line Fault Detection Kaggle competition website:
+The dataset that is going to be used is available from the \href{https://www.kaggle.com/c/vsb-power-line-fault-detection}
+{VSB Power Line Fault Detection Kaggle competition website.}
 
-https://www.kaggle.com/c/vsb-power-line-fault-detection
 
 It contains several examples of labeled PD signals (fault or undamaged).
 Each signal contains 800,000 measurements of a power line's voltage,
 taken over 20 milliseconds for each one of the three phases.
 
 \hypertarget{problem-statement}{%
-\subsubsection{Problem Statement}\label{problem-statement}}
+\subsection{Problem Statement}\label{problem-statement}}
 
 The goal is to train a classification algorithm to predict for PD signal
 measurements if a power line damaged or not. I will be tackling this
@@ -348,18 +345,17 @@ feature extraction parts and 30\% of the time on training models and
 tweaking parameters.
 
 \hypertarget{metrics}{%
-\subsubsection{Metrics}\label{metrics}}
+\subsection{Metrics}\label{metrics}}
 
 The results will be evaluated with the
 \href{https://en.wikipedia.org/wiki/Matthews_correlation_coefficient}{Matthews
 correlation coefficient (MCC)} between the predicted and the observed
 response:
 
-\begin{figure}
+\begin{equation}
 \centering
-\includegraphics{https://wikimedia.org/api/rest_v1/media/math/render/svg/5caa90fc15105b74b59a30bbc9cc2e5bd43a13b7}
-\caption{alt text}
-\end{figure}
+MCC = \dfrac{TP \times TN - FP \times FN}{\sqrt{(TP + FP)(TP + FN)(TN + FP)(TN + FN)}}
+\end{equation}
 
 where TP is the number of true positives, TN the number of true
 negatives, FP the number of false positives, and FN the number of false
@@ -369,16 +365,13 @@ unbalanced because faults are not very frequent.
 This is the same metric used in the competition.
 
     \hypertarget{ii.-analysis}{%
-\subsection{II. Analysis}\label{ii.-analysis}}
+\section{Analysis}\label{ii.-analysis}}
 
 \hypertarget{data-exploration-and-visualization}{%
-\subsubsection{Data Exploration and
+\subsection{Data Exploration and
 Visualization}\label{data-exploration-and-visualization}}
 
-The dataset is available at
-https://www.kaggle.com/c/vsb-power-line-fault-detection/data
-
-It contains the following files:
+The dataset is available at \href{https://www.kaggle.com/c/vsb-power-line-fault-detection/data}{https://www.kaggle.com/c/vsb-power-line-fault-detection/data} and contains the following files:
 
 \begin{enumerate}
 \def\labelenumi{\alph{enumi})}
@@ -423,13 +416,13 @@ optimize the memory consumption by processing one signal at a time.
 
 The \texttt{metadata\_train.csv} file contains \texttt{8712} rows, each
 one representing a signal available in the \texttt{train.parquet} file.
-The overall and per phase distribution for the labels are displayed in
-the figures below.
+The overall and per phase distribution for the labels are displayed in figure \ref{fig:pdsignal_dist}.
 
-\begin{figure}
+\begin{figure}[h]
 \centering
-\includegraphics{train_data_dist_twosided.png}
-\caption{Label distribution - Overall}
+\includegraphics[width=0.8\textwidth]{train_data_dist_twosided.png}
+\caption{Label distribution}
+\label{fig:pdsignal_dist} 
 \end{figure}
 
 We can clearly see the data is very unbalanced: only \texttt{6.0262\%}
@@ -442,16 +435,24 @@ variable to the models, since it won't add any relevante information.
 Eah signal in the \texttt{train.parquet} contains \texttt{800,000}
 measurements of a power line's voltage, taken over \texttt{20}
 milliseconds. Thefore, the sampling rate is \texttt{40Mhz}. A sample
-signal PD signal for each phase can be seen in the figure below.
+signal PD signal for each phase can be seen in the figure \ref{fig:pdsignal}.
 
-\begin{figure}
+\begin{figure}[h]
 \centering
-\includegraphics{signal_phase_example.png}
-\caption{PD Signal}
+\includegraphics[width=0.8\textwidth]{signal_phase_example.png}
+\caption{PD Signals for each phase}
+\label{fig:pdsignal}
 \end{figure}
 
-The figure below shows a comparison between a fault and normal example
-signals. \includegraphics{signal_fault_normal_raw.png}
+Figure \ref{fig:pdsignal_fd} shows a comparison between a fault and normal example
+signals. 
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.8\textwidth]{signal_fault_normal_raw.png}
+	\caption{Fault and normal PD Signal}
+	\label{fig:pdsignal_fd}
+\end{figure}
 
 Based on these examples, the following can be inferred about PD signals:
 
@@ -475,8 +476,10 @@ machine learning algorithms, since this would lead to have
 processing techniques will have to applied to extract features that can
 accurately represent the signal.
 
+
+
 \hypertarget{algorithms-and-techniques}{%
-\subsubsection{Algorithms and
+\subsection{Algorithms and
 Techniques}\label{algorithms-and-techniques}}
 
 The following classifiers will be teste and the one with the highest
@@ -517,7 +520,7 @@ optimized:
 \end{itemize}
 
 \hypertarget{benchmark}{%
-\subsubsection{Benchmark}\label{benchmark}}
+\subsection{Benchmark}\label{benchmark}}
 
 The benchmark model will be a naive predictor that will output that the
 power line is always undamaged (false). Based on the data discussion
@@ -526,10 +529,10 @@ accuracy. This model will also have a baseline value of \texttt{0.0} for
 the Mathews Correlation Coefficient.
 
     \hypertarget{iii.-methodology}{%
-\subsection{III. Methodology}\label{iii.-methodology}}
+\section{Methodology}\label{iii.-methodology}}
 
 \hypertarget{data-preprocessing}{%
-\subsubsection{Data Preprocessing}\label{data-preprocessing}}
+\subsection{Data Preprocessing}\label{data-preprocessing}}
 
 \hypertarget{feature-extraction}{%
 \paragraph{Feature Extraction}\label{feature-extraction}}
@@ -584,13 +587,14 @@ the most similar to the PD pattern.
 
 The high pass filter and DWT denoising will be applied for every signal
 in the database. After this step, we can start extracting new features
-to represente this signal. An filtered signal example can be seen in the
-figure below.
+to represente this signal. An filtered signal example can be seen in
+figure \ref{fig:pdsignal_dn}.
 
-\begin{figure}
+\begin{figure}[h]
 \centering
-\includegraphics{signal_phase_denoised.png}
-\caption{PD Signal Denoised}
+\includegraphics[width=0.8\textwidth]{signal_phase_denoised.png}
+\caption{Denoised PD Signal}
+\label{fig:pdsignal_dn}
 \end{figure}
 
 Afther that, time and frequency domain features will be extracted from
@@ -656,20 +660,20 @@ the following parameters were selected:
   \end{itemize}
 \end{enumerate}
 
-In the following figures, it is possible to see the peaks from an
-example signal and also have a closer look at the width and height of a
-peak.
+In figures \ref{fig:pdsignal_peaks} and \ref{fig:pdsignal_peaks_width}  it is possible to see the peaks from an example signal and also have a closer look at the width and height of a peak.
 
-\begin{figure}
+\begin{figure}[h]
 \centering
-\includegraphics{signal_peaks.png}
-\caption{Signal Peaks}
+\includegraphics[width=0.8\textwidth]{signal_peaks.png}
+\caption{PD signal selected peaks}
+\label{fig:pdsignal_peaks}
 \end{figure}
 
-\begin{figure}
+\begin{figure}[h]
 \centering
-\includegraphics{signal_peak_zoom.png}
-\caption{Peak height and width}
+\includegraphics[width=0.8\textwidth]{signal_peak_zoom.png}
+\caption{PD signal peak height and width}
+\label{fig:pdsignal_peaks_width}
 \end{figure}
 
 The frequency domain features are based on the power spectral density
@@ -696,13 +700,14 @@ function from the \texttt{scipy} package. Welch's method calculates an
 estimate of the power spectral density by dividing the data into
 overlapping segments, computing a modified periodogram for each segment
 and averaging the periodograms. An example for a faulted and normal
-signal can be seen in the figure below. This task yields more 16
+signal can be seen in figure \ref{fig:pdsignal_psd}. This task yields more 16
 extracted features.
 
-\begin{figure}
+\begin{figure}[h]
 \centering
-\includegraphics{signal_fault_normal_psd_denoised.png}
-\caption{Power spectral density}
+\includegraphics[width=0.8\textwidth]{signal_fault_normal_psd_denoised.png}
+\caption{Power spectral density comparison}
+\label{fig:pdsignal_psd}
 \end{figure}
 
 After applying these two feature extraction, we finally have the dataset
@@ -711,737 +716,28 @@ dataset has 40 numerical features for each signal and their
 corresponding labels.
 
 \hypertarget{feature-transformation}{%
-\paragraph{Feature Transformation}\label{feature-transformation}}
+\subsection{Feature Transformation}\label{feature-transformation}}
 
-The statistical description can be seen in the table below.
+The dataset has features with very different magnitudes (e.g: number of
+peaks and peak width), therefore the dataset will first be normalized to
+the 0-1 range. Figure \ref{fig:pdsignal_scaledfeat} shows the distribution of each feature
+after the normalization.
 
-\begin{longtable}[]{@{}llllllll@{}}
-\toprule
-\begin{minipage}[b]{0.16\columnwidth}\raggedright
-Feature\strut
-\end{minipage} & \begin{minipage}[b]{0.09\columnwidth}\raggedright
-mean\strut
-\end{minipage} & \begin{minipage}[b]{0.09\columnwidth}\raggedright
-std\strut
-\end{minipage} & \begin{minipage}[b]{0.09\columnwidth}\raggedright
-min\strut
-\end{minipage} & \begin{minipage}[b]{0.09\columnwidth}\raggedright
-25\%\strut
-\end{minipage} & \begin{minipage}[b]{0.09\columnwidth}\raggedright
-50\%\strut
-\end{minipage} & \begin{minipage}[b]{0.09\columnwidth}\raggedright
-75\%\strut
-\end{minipage} & \begin{minipage}[b]{0.08\columnwidth}\raggedright
-max\strut
-\end{minipage}\tabularnewline
-\midrule
-\endhead
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-number\_of\_peaks\_p1\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-3.282633e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-7.949112e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-0.000000e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-3.000000e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.000000e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-3.000000e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-1144.000000\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-number\_of\_peaks\_p2\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-3.183942e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-8.018707e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-0.000000e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.000000e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-9.000000e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.700000e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-1164.000000\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-number\_of\_peaks\_p3\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-3.176102e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-7.946652e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-0.000000e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.000000e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-9.000000e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.800000e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-1155.000000\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-number\_of\_peaks\_p4\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-3.221247e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-8.259928e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-0.000000e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.000000e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-9.000000e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.800000e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-1146.000000\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-mean\_width\_of\_peaks\_p1\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-8.630635e-04\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.748492e-03\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-0.000000e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-7.329588e-05\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.927462e-04\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-8.171508e-04\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-0.019447\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-mean\_width\_of\_peaks\_p2\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-8.074817e-04\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.542744e-03\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-0.000000e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-4.746766e-05\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-3.000340e-04\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-8.291256e-04\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-0.019327\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-mean\_width\_of\_peaks\_p4\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-7.308763e-04\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.456980e-03\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-0.000000e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-4.004865e-05\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.600330e-04\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-7.639245e-04\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-0.018890\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-mean\_width\_of\_peaks\_p3\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-5.046811e-04\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.226370e-03\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-0.000000e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.521847e-05\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.673808e-04\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-4.927585e-04\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-0.019500\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-max\_width\_of\_peaks\_p1\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-3.334883e-03\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-3.637011e-03\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-0.000000e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-6.413317e-04\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.265090e-03\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-4.740015e-03\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-0.019490\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-max\_width\_of\_peaks\_p2\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-3.302283e-03\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-3.350480e-03\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-0.000000e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.658889e-04\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.482477e-03\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-5.477506e-03\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-0.019327\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-max\_width\_of\_peaks\_p3\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-3.100975e-03\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-3.255219e-03\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-0.000000e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.220042e-04\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.174817e-03\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-5.019026e-03\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-0.019500\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-max\_width\_of\_peaks\_p4\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.410394e-03\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-3.230426e-03\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-0.000000e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-8.497598e-05\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.173368e-03\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-3.264513e-03\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-0.019573\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-min\_width\_of\_peaks\_p1\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.728285e-04\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.509799e-03\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-0.000000e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-4.097289e-08\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-6.645745e-08\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.422277e-05\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-0.019447\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-min\_width\_of\_peaks\_p2\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.582206e-04\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.327438e-03\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-0.000000e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-3.885520e-08\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-4.552797e-08\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.061528e-05\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-0.019327\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-min\_width\_of\_peaks\_p4\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.262931e-04\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.252956e-03\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-0.000000e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-3.830487e-08\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-4.486472e-08\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-6.839709e-06\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-0.018890\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-min\_width\_of\_peaks\_p3\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.358825e-04\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.051550e-03\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-0.000000e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-3.830376e-08\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-4.363012e-08\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-8.761062e-07\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-0.019500\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-mean\_height\_of\_peaks\_p1\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.202472e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.713153e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-0.000000e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.247731e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.664245e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.664678e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-233.441267\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-mean\_height\_of\_peaks\_p2\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.131062e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.857717e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-0.000000e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.120602e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.648475e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.836656e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-156.574158\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-mean\_height\_of\_peaks\_p4\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.123533e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.899801e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-0.000000e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.114737e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.637225e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.833730e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-170.794998\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-mean\_height\_of\_peaks\_p3\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.076621e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.846094e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-0.000000e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.106729e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.607933e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.746802e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-150.854187\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-max\_height\_of\_peaks\_p1\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-6.781429e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-8.039033e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-0.000000e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.577333e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-3.055797e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-8.173614e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-304.033012\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-max\_height\_of\_peaks\_p2\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-6.750096e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-8.359665e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-0.000000e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.273369e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.983007e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-8.508742e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-323.740506\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-max\_height\_of\_peaks\_p4\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-6.759822e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-8.408626e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-0.000000e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.254084e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.887481e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-8.683218e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-330.216528\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-max\_height\_of\_peaks\_p3\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-6.609730e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-8.276208e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-0.000000e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.227234e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.786274e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-8.463833e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-318.762537\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-min\_height\_of\_peaks\_p1\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.039030e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-5.024357e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-0.000000e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.004593e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.026697e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.097832e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-233.441267\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-min\_height\_of\_peaks\_p2\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-9.774325e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-6.549486e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-0.000000e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.001784e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.017724e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.082135e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-156.574158\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-min\_height\_of\_peaks\_p4\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-9.641617e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-6.408897e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-0.000000e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.001557e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.017939e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.080096e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-140.428233\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-min\_height\_of\_peaks\_p3\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-9.509654e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-6.196550e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-0.000000e+00\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.001436e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.015763e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.078116e+01\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-150.854187\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-sum\_spectrum\_p1\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-3.530868e-06\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-5.352646e-06\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.307255e-22\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-3.189693e-07\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.629760e-06\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-4.491362e-06\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-0.000072\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-max\_spectrum\_p1\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.086544e-06\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.631758e-06\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.241261e-22\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-4.851728e-08\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-5.659098e-07\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.460518e-06\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-0.000033\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-mean\_spectrum\_p1\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.103396e-07\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.672702e-07\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-4.085171e-24\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-9.967790e-09\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-5.092999e-08\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.403551e-07\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-0.000002\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-sum\_spectrum\_p2\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-6.212455e-07\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.766406e-06\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.171639e-30\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.764359e-08\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-7.864020e-08\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.491131e-07\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-0.000071\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-max\_spectrum\_p2\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-7.901966e-08\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-4.519965e-07\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.704961e-31\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.339236e-09\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-6.805220e-09\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.415703e-08\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-0.000012\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-mean\_spectrum\_p2\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.941392e-08\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-8.645020e-08\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-3.661373e-32\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-5.513623e-10\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.457506e-09\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-7.784784e-09\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-0.000002\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-sum\_spectrum\_p3\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.237456e-06\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-9.254183e-06\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-3.019963e-32\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-8.739905e-09\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-7.283541e-08\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-3.913508e-07\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-0.000201\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-max\_spectrum\_p3\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.665335e-07\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-9.447264e-07\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.735203e-33\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-8.018398e-10\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-4.810539e-09\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-3.049029e-08\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-0.000018\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-mean\_spectrum\_p3\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-6.992051e-08\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.891932e-07\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-9.437383e-34\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.731220e-10\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.276107e-09\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.222971e-08\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-0.000006\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-sum\_spectrum\_p4\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-3.275073e-06\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-9.823578e-06\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.564058e-33\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.605089e-09\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-8.406483e-08\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-5.844194e-07\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-0.000083\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-max\_spectrum\_p4\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-3.380832e-07\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.085624e-06\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.621807e-34\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.040832e-10\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-4.612339e-09\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-3.418533e-08\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-0.000008\strut
-\end{minipage}\tabularnewline
-\begin{minipage}[t]{0.16\columnwidth}\raggedright
-mean\_spectrum\_p4\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.023460e-07\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-3.069868e-07\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-4.887683e-35\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-8.140903e-11\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-2.627026e-09\strut
-\end{minipage} & \begin{minipage}[t]{0.09\columnwidth}\raggedright
-1.826311e-08\strut
-\end{minipage} & \begin{minipage}[t]{0.08\columnwidth}\raggedright
-0.000003\strut
-\end{minipage}\tabularnewline
-\bottomrule
-\end{longtable}
 
-It can be seen that the features have very different magnitudes (e.g:
-number of peaks and peak width), therefore the dataset will first be
-normalized to the 0-1 range. The figure below shows the distribution of
-each feature after the normalization.
-
-\begin{figure}
+\begin{figure}[h]
 \centering
-\includegraphics{dist_minmax_scaled.png}
+\includegraphics[width=0.6\textwidth]{dist_minmax_scaled.png}
 \caption{Scaled Features}
+\label{fig:pdsignal_scaledfeat}
 \end{figure}
+
 
 It can be seen that almost all features distribution are skewed, which
 means the data does not follow a normal distribution. Therefore, the
-natural logarithm transformation is applied to the dataset.
-
-\begin{figure}
-\centering
-\includegraphics{dist_minmax_scaled_log.png}
-\caption{Log-scaled Features}
-\end{figure}
+natural logarithm transformation should be applied to the dataset.
 
 \hypertarget{feature-selection}{%
-\paragraph{Feature Selection}\label{feature-selection}}
+\subsection{Feature Selection}\label{feature-selection}}
 
 The next pre-processing step should be the feature selection using a
 tree-based approach. The idea behind this is that in every node in a
@@ -1452,28 +748,23 @@ an ensemble of trees, we can average these values on different subsets
 of the data and estimate the importance of the variables. For this task,
 the
 \href{https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.ExtraTreesClassifier.html}{ExtraTreeClassifier}
-model will be used.
+model will be used with the default parameters.
 
 After applying this feature selection algorithm to the dataset, the
-importance of each feature can be seen in the figure below.
+importance of each feature can be seen in figure \ref{fig:feat_importance}.
 
-\begin{figure}
+\begin{figure}[h]
 \centering
-\includegraphics{feature_importances.png}
+\includegraphics[width=0.8\textwidth]{feature_importances.png}
 \caption{Feature Importance}
+\label{fig:feat_importance}
 \end{figure}
 
 Based on this result, the following features will be selected for
-training the prediction models: \texttt{number\_of\_peaks\_p1},
-\texttt{number\_of\_peaks\_p2}, \texttt{number\_of\_peaks\_p3},
-\texttt{number\_of\_peaks\_p4}, \texttt{max\_height\_of\_peaks\_p1},
-\texttt{max\_height\_of\_peaks\_p2},
-\texttt{max\_height\_of\_peaks\_p4},
-\texttt{max\_height\_of\_peaks\_p3}, \texttt{sum\_spectrum\_p1},
-\texttt{max\_spectrum\_p1}, \texttt{mean\_spectrum\_p1}
+training the prediction models: \texttt{number\_of\_peaks\_p1},\texttt{number\_of\_peaks\_p2}, \texttt{number\_of\_peaks\_p3},\texttt{number\_of\_peaks\_p4}, \texttt{max\_height\_of\_peaks\_p1},\texttt{max\_height\_of\_peaks\_p2},\texttt{max\_height\_of\_peaks\_p4},\texttt{max\_height\_of\_peaks\_p3}, \texttt{sum\_spectrum\_p1},\texttt{max\_spectrum\_p1}, \texttt{mean\_spectrum\_p1}
 
 \hypertarget{implementation}{%
-\subsubsection{Implementation}\label{implementation}}
+\subsection{Implementation}\label{implementation}}
 
 The implementation process starts by extracting the features for each
 signal in the \texttt{train.parquet} file, as described before. Each
@@ -1490,27 +781,46 @@ selection are executed. This task, and the model learning are available
 in the \texttt{data\_processing\_and\_modeling} Jupyter notebook.
 
 The remaining process is very straightforward, and consists in the
-following steps: * Load the dataset with the features already extracted
-transformed and selected into memory * Split the dataset into training
-(80\%) and test (20\%) sets * Evaluate several models using 10 fold
-cross-validation on the training set * Select the trained model with the
-highest MCC cross validation score * Train the selected model on
-training set * Grid search will be used to select the optimal
-hyperparameters * Evaluate the model MCC score on the test set
+following steps:
+
+\begin{itemize}
+	\item
+	Load the dataset with the features already extracted
+	transformed and selected into memory
+	\item
+	Split the dataset into training
+	(80\%) and test (20\%) sets 
+	\item
+	Evaluate several models using 10 fold
+	cross-validation on the training set
+	\item
+	Select the trained model with the
+	highest MCC cross validation score
+	\item 
+	Train the selected model on
+	training set
+	\item 
+	Use grid search to select the optimal
+	hyperparameters
+	\item 
+	Evaluate the model MCC score on the test set
+	
+\end{itemize}
 
 \hypertarget{refinement}{%
-\subsubsection{Refinement}\label{refinement}}
+\subsection{Refinement}\label{refinement}}
 
 As mentioned in the Benchmark section, the naive predictor achieved a
 poor MCC score of \texttt{0.0}. To get an initial result, a few models
 using default hyperparameters were tested agains the dataset: kNN,
 Gradient Boosting, Random Forest and Logistic Regression. The results
-can be seen on the boxplot below.
+can be seen in figure \ref{fig:model_crossvall}.
 
-\begin{figure}
+\begin{figure}[h]
 \centering
-\includegraphics{model_cross_val_trial.png}
-\caption{Model Cross-validation}
+\includegraphics[width=0.8\textwidth]{model_cross_val_trial.png}
+\caption{Model Cross-validation results}
+\label{fig:model_crossvall}
 \end{figure}
 
 We can see that all the proposed models achieved a better score than our
@@ -1524,8 +834,6 @@ hyperparameters configuration:
 \item
   \texttt{n\_estimators}: {[}10, 30, 50, 100, 150, 200, 300{]}
 \item
-  \texttt{max\_features}: {[}`auto', `sqrt'{]}
-\item
   \texttt{max\_depth}: {[}10, 30, 50, 70, 100, None{]}
 \item
   \texttt{min\_samples\_split}: {[}2, 5{]}
@@ -1534,14 +842,17 @@ hyperparameters configuration:
 \end{itemize}
 
 After executing the Grid Search for every combination of these
-parameters, the optimal model achieved a MMC score of \texttt{1.0} on
-the training set and \texttt{0.6} on the test set.
+parameters, the optimal model achieved a MMC score of \texttt{0.9639} on
+the training set and \texttt{0.5691} on the test set.
+
+
+\clearpage
 
     \hypertarget{iv.-results}{%
-\subsection{IV. Results}\label{iv.-results}}
+\section{Results}\label{iv.-results}}
 
 \hypertarget{model-evaluation-and-validation}{%
-\subsubsection{Model Evaluation and
+\subsection{Model Evaluation and
 Validation}\label{model-evaluation-and-validation}}
 
 The final optimal hyperparameters for the random forest classifier are
@@ -1550,9 +861,7 @@ summarized below:
 \begin{itemize}
 \tightlist
 \item
-  \texttt{n\_estimators}: 200
-\item
-  \texttt{max\_features}: `auto'
+  \texttt{n\_estimators}: 150
 \item
   \texttt{max\_depth}: 30
 \item
@@ -1565,22 +874,23 @@ The model was chosen because it achieved the highest MCC score in the
 training data. The hyperparameters are also very reasonable, not having
 any very extreme values selected. To verify the robustness of the final
 model, the test data was evaluated, achieving a MCC score was
-\texttt{0.6}, which is a good value. However, it suggests that there was
-some overfitting on the training data, since the training score was
-\texttt{1.0}.
+\texttt{0.5691}, which is a good value. However, it suggests that there
+was some overfitting on the training data, since the training score was
+\texttt{0.9639}.
 
 \hypertarget{justification}{%
-\subsubsection{Justification}\label{justification}}
+\subsection{Justification}\label{justification}}
 
 Comparing to the benchmark model, the final solution was much better.
 The test MCC score values was increased from \texttt{0} to \texttt{0.6},
-achieving the objective of this project. The figure below displays the
+achieving the objective of this project. Figure \ref{fig:confusion_matrix}  displays the
 confusion matrix of the test set evaluations.
 
-\begin{figure}
+\begin{figure}[h]
 \centering
-\includegraphics{cnf_matrix_testset.png}
+\includegraphics[width=0.8\textwidth]{cnf_matrix_testset.png}
 \caption{Confusion Matrix}
+\label{fig:confusion_matrix}
 \end{figure}
 
 The analysis of the confusion matrix shows that the model did a very
@@ -1591,24 +901,24 @@ MMC score was not very high. This could be an effect of the very
 unbalanced dataset.
 
 The model was also evaluated against Kaggle's test set, achieving a
-score of \texttt{XXX}. This placed me among the top XX competitors, as
-of February 4th.
+score of \texttt{0.469}. This placed me among the top 500 competitors!
 
     \hypertarget{v.-conclusion}{%
-\subsection{V. Conclusion}\label{v.-conclusion}}
+\section{Conclusion}\label{v.-conclusion}}
 
 \hypertarget{free-form-visualization}{%
-\subsubsection{Free-Form Visualization}\label{free-form-visualization}}
+\subsection{Free-Form Visualization}\label{free-form-visualization}}
 
 The biggest challenge of this project is to find a representation of the
 PD signal that is good enough to separate between a faulted and normal
-signal. The figure below shows an example of signals classified as
+signal. Figure \ref{fig:free_form_pd} shows an example of signals classified as
 faulted and normal.
 
-\begin{figure}
+\begin{figure}[h]
 \centering
-\includegraphics{signal_fault_normal_raw_freeform.png}
+\includegraphics[width=0.8\textwidth]{signal_fault_normal_raw_freeform.png}
 \caption{Fault and normal signals}
+\label{fig:free_form_pd}
 \end{figure}
 
 Visually, it is pratically impossible to classify each signal. In fact,
@@ -1622,7 +932,7 @@ this information. Furthermore, it higlights the importance of the data
 pre-processing in any data science project.
 
 \hypertarget{reflection}{%
-\subsubsection{Reflection}\label{reflection}}
+\subsection{Reflection}\label{reflection}}
 
 The process used for this project can be summarized using the following
 steps:
@@ -1665,7 +975,7 @@ proved to be good and the models achieved better results than the
 benchmark on the first trials.
 
 \hypertarget{improvement}{%
-\subsubsection{Improvement}\label{improvement}}
+\subsection{Improvement}\label{improvement}}
 
 To achive better results, I believe the first step is trying to improve
 the quality of the PD denoising and feature extraction algorithms. In
@@ -1683,7 +993,7 @@ the overfitting observed on the training dataset and improve the current
 benchmark with random forests.
 
     \hypertarget{references}{%
-\subsubsection{References}\label{references}}
+\section{References}\label{references}}
 
 {[}1{]}
 http://dspace.vsb.cz/bitstream/handle/10084/133114/VAN431\_FEI\_P1807\_1801V001\_2018.pdf
