@@ -2,6 +2,8 @@
 # Machine Learning Engineer Nanodegree Udacity - Capstone Project
 ## VSB Power Line Fault Detection - Kaggle
 
+Profile: https://www.kaggle.com/vicrsp
+
 ## Source code
 
 All the python scripts are located at the `Source` folder. Jupyter notebooks are in the `Notebooks` folder.
@@ -37,4 +39,11 @@ Only the `metadata_train.csv` and `train.parquet` files are required for this pr
 * The [pywt](https://pywavelets.readthedocs.io/en/latest/install.html) package is necessary to perform the DWT denoising procedures.
 * Other required packages: scipy, seaborn, matplotlib, pandas, numpy, statsmodels, scikit-learn
 * [Dash](https://plot.ly/products/dash/) and [plotly](https://plot.ly/python/getting-started/) are only required to run the `dashboard.py` file
+
+## Report
+
+All the report files are located in the `Report` folder. Direct links:
+
+* Proposal: https://github.com/vicrsp/mlen-capstone-udacity/blob/master/Report/capstone_proposal.pdf
+* Final report: https://github.com/vicrsp/mlen-capstone-udacity/blob/master/Report/report_notebook.pdf
 
