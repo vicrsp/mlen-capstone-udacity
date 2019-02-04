@@ -3,8 +3,6 @@ import plotly.figure_factory as ff
 import plotly 
 import numpy as np
 
-#plotly.tools.set_credentials_file(username='victorspruela', api_key='QsriLXOL5rTdL3vnzeda')
-
 import pandas as pd
 import dash
 import dash_core_components as dcc
