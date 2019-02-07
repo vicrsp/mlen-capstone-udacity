@@ -492,10 +492,25 @@ Forest} and
 \href{https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.GradientBoostingClassifier.html}{Gradient
 Boosting}. They are well known techniques for the binary classification
 task and are expected to perform well on this dataset, since they do not
-require very large datasets to work. They will be evaluated with their
-default pararemeters, as described in their documentation page.
+require very large datasets to work. 
 
-The chosen model will use as inputs the features extracted from the raw
+\paragraph{Random Forest} This is an ensemble learning method that uses decision trees as the weak learners. It is suitable for both classification and regression problems. It works by fitting several decision trees from randomly taken subsets of the data, using the general bagging procedure. Moreover, it also adds more randomness to the model when growing the trees: instead of always searching for the best feauture while splitting a node, it searches for the best feature among a random subset of features. Therefore, it is very flexible and can build very complex decision boundaries, having a good performance in most problems.
+
+\paragraph{Logistic Regression} It's a linear model that uses a logistic function to model a binary dependent variable. It will define a linear decision boundary, therefore it is more suitable for linearly separable problems. For example, the logistic function can be defined as the standard sigmoid function:
+
+\begin{equation}
+f(x) = \frac{1}{1 + e^{-x}}
+\end{equation}
+
+This model outputs the probability of the dependent variable from one or more independent variables. Therefore, in order to predict the class, we need to define a threshold and assume that any probability below belongs to class 0 and above to class 1. 
+
+\paragraph{kNN} This is a very simple, non-parametric (does not make any assumptions on the uderlying data distribution), lazy learning algorithm that can be used for both classification and regression problems. The prediction is done by finding the \textit{k} closest data points to a new example and assing as the output the most common class among them. 
+
+\paragraph{Gradient Boosting} This is an ensemble model, typically having decision trees as the weak learners, for regression and classification problems. It is a boosting technique, in which the models are sequentially trained based on the errors from previous iterations. The main idea behind it is that we are inserting new models that can correct the errors from previous ones, by training them on the residuals. This is different from AdaBoost, where we add greater weights to wrong predictions. A more detailed explanation can be found in [6].
+
+
+The models be evaluated with the
+default parameters, as described in their documentation page. The chosen model will use as inputs the features extracted from the raw
 PD signals and the respective labels (see the
 \texttt{Data\ Preprocessing} section). A grid search will be executed in
 order to tune its hyperparameters and find the optimal classifier. For
@@ -807,6 +822,28 @@ following steps:
 	
 \end{itemize}
 
+During the implementation, the following challenges had to be tackled in order to produce the final results:
+
+\begin{itemize}
+	\item
+	Selecting the peak \texttt{prominence} threshold needed a very carefull analysis: low values could lead to noise being classified as a peak and high values would ignore most of the peaks. This needed to be done by a trial and error approach until a good value was found.
+	
+	\item 
+	Selecting the \texttt{peak\_widths} parameters was also tricky: low values could classify noise as peaks and high values would ignore all peaks. Since the PD pulse is very fast, this variable was very diffficult to be defined such that only the peaks of interest were detected. This also needed to be done by a trial and error approach.
+	
+	\item 
+	The data processing routine takes too long time. Every time a mistake was done in the parquet processing code, I had to start over and wait up to an hour to finish the processing. In order to improve this, I tried to optimize the code using mulithreaded processing, but it became quite complex and didn't work as expected.
+	
+	\item 
+	After finishing the feature extraction, having a first look at the data showed that the model seemed impossible to be solved, because there was no clear class separation. After selecting the features and applying the necessary transformations, the data started to make more sense and a good model was learnt.
+	
+	\item 
+	Setting the \texttt{random\_seed} parameters for the models was important to make sure the results were reproducible.
+	
+\end{itemize}
+
+
+
 \hypertarget{refinement}{%
 \subsection{Refinement}\label{refinement}}
 
@@ -877,6 +914,16 @@ model, the test data was evaluated, achieving a MCC score was
 \texttt{0.5691}, which is a good value. However, it suggests that there
 was some overfitting on the training data, since the training score was
 \texttt{0.9639}.
+
+Figure \ref{fig:grid_serch} shows the results of the grid search algorithm. It is possible to see that the model achieved a higher score variation on the training than on the test set. This means that the model is very robust to predict unseen data, because even the models that achieved the worst training score had a good performance on the test set. 
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.8\textwidth]{model_grid_search_statistics.png}
+	\caption{Grid search results for the test and training set}
+	\label{fig:grid_serch}
+\end{figure}
+
 
 \hypertarget{justification}{%
 \subsection{Justification}\label{justification}}
@@ -1014,6 +1061,8 @@ and Electrical Insulation, vol.~24, no. 2, pp.~1097-1104, April 2017.
 
 {[}5{]} Liaw, A. and Wiener, M., 2002. Classification and regression by
 randomForest. R news, 2(3), pp.18-22.
+
+{[}6{]} Friedman, J.H., 2001. Greedy function approximation: a gradient boosting machine. Annals of statistics, pp.1189-1232.
 
 
     % Add a bibliography block to the postdoc

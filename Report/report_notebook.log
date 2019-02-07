@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.2)  4 FEB 2019 20:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.2)  6 FEB 2019 22:01
 entering extended mode
 **./report_notebook.tex
 (report_notebook.tex
@@ -917,125 +917,133 @@ Package pdftex.def Info: signal_fault_normal_raw.png  used on input line 452.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[3 <./train_data_dist_twosided.png> <./signal_phase_example.png>] [4 <./signal_
-fault_normal_raw.png>]
+[3 <./train_data_dist_twosided.png> <./signal_phase_example.png>]
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 540.
-<signal_phase_denoised.png, id=152, 1300.86pt x 578.16pt>
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 497.
+ [4 <./signal_fault_normal_raw.png>] [5]
+<signal_phase_denoised.png, id=165, 1300.86pt x 578.16pt>
 File: signal_phase_denoised.png Graphic file (type png)
 <use signal_phase_denoised.png>
-Package pdftex.def Info: signal_phase_denoised.png  used on input line 595.
+Package pdftex.def Info: signal_phase_denoised.png  used on input line 610.
 (pdftex.def)             Requested size: 375.80544pt x 167.0181pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[5]
-<signal_peaks.png, id=167, 867.24pt x 433.62pt>
+ [6 <./signal_phase_denoised.png>]
+<signal_peaks.png, id=177, 867.24pt x 433.62pt>
 File: signal_peaks.png Graphic file (type png)
 <use signal_peaks.png>
-Package pdftex.def Info: signal_peaks.png  used on input line 667.
+Package pdftex.def Info: signal_peaks.png  used on input line 682.
 (pdftex.def)             Requested size: 375.80544pt x 187.90198pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<signal_peak_zoom.png, id=168, 867.24pt x 433.62pt>
+<signal_peak_zoom.png, id=178, 867.24pt x 433.62pt>
 File: signal_peak_zoom.png Graphic file (type png)
 <use signal_peak_zoom.png>
-Package pdftex.def Info: signal_peak_zoom.png  used on input line 674.
+Package pdftex.def Info: signal_peak_zoom.png  used on input line 689.
 (pdftex.def)             Requested size: 375.80544pt x 187.90198pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6 <./signal_phase_denoised.png>]
-<signal_fault_normal_psd_denoised.png, id=180, 867.24pt x 578.16pt>
+[7 <./signal_peaks.png>]
+<signal_fault_normal_psd_denoised.png, id=191, 867.24pt x 578.16pt>
 File: signal_fault_normal_psd_denoised.png Graphic file (type png)
 <use signal_fault_normal_psd_denoised.png>
 Package pdftex.def Info: signal_fault_normal_psd_denoised.png  used on input li
-ne 708.
+ne 723.
 (pdftex.def)             Requested size: 375.80544pt x 250.53596pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7 <./signal_peaks.png> <./signal_peak_zoom.png>]
-<dist_minmax_scaled.png, id=191, 867.24pt x 1734.48pt>
+<dist_minmax_scaled.png, id=193, 867.24pt x 1734.48pt>
 File: dist_minmax_scaled.png Graphic file (type png)
 <use dist_minmax_scaled.png>
-Package pdftex.def Info: dist_minmax_scaled.png  used on input line 729.
+Package pdftex.def Info: dist_minmax_scaled.png  used on input line 744.
 (pdftex.def)             Requested size: 281.85587pt x 563.69933pt.
 
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<feature_importances.png, id=194, 867.24pt x 433.62pt>
+[8 <./signal_peak_zoom.png>]
+<feature_importances.png, id=205, 867.24pt x 433.62pt>
 File: feature_importances.png Graphic file (type png)
 <use feature_importances.png>
-Package pdftex.def Info: feature_importances.png  used on input line 758.
+Package pdftex.def Info: feature_importances.png  used on input line 773.
 (pdftex.def)             Requested size: 375.80544pt x 187.90198pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-Overfull \hbox (39.13158pt too wide) in paragraph at lines 763--765
+Overfull \hbox (39.13158pt too wide) in paragraph at lines 778--780
 \T1/cmtt/m/n/10.95 max_height_of_peaks_p1\T1/ppl/m/n/10.95 ,\T1/cmtt/m/n/10.95 
 max_height_of_peaks_p2\T1/ppl/m/n/10.95 ,\T1/cmtt/m/n/10.95 max_height_of_peaks
 _p4\T1/ppl/m/n/10.95 ,\T1/cmtt/m/n/10.95 max_height_of_peaks_p3\T1/ppl/m/n/10.9
 5 ,
  []
 
-[8 <./signal_fault_normal_psd_denoised.png>]
-<model_cross_val_trial.png, id=205, 867.24pt x 433.62pt>
+[9 <./signal_fault_normal_psd_denoised.png>]
+<model_cross_val_trial.png, id=214, 867.24pt x 433.62pt>
 File: model_cross_val_trial.png Graphic file (type png)
 <use model_cross_val_trial.png>
-Package pdftex.def Info: model_cross_val_trial.png  used on input line 821.
+Package pdftex.def Info: model_cross_val_trial.png  used on input line 858.
 (pdftex.def)             Requested size: 375.80544pt x 187.90198pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[9] [10 <./dist_minmax_scaled.png>] [11 <./feature_importances.png> <./model_cr
-oss_val_trial.png>]
-<cnf_matrix_testset.png, id=224, 433.62pt x 289.08pt>
+[10] [11 <./dist_minmax_scaled.png>] [12 <./feature_importances.png> <./model_c
+ross_val_trial.png>]
+<model_grid_search_statistics.png, id=233, 867.24pt x 433.62pt>
+File: model_grid_search_statistics.png Graphic file (type png)
+<use model_grid_search_statistics.png>
+Package pdftex.def Info: model_grid_search_statistics.png  used on input line 9
+22.
+(pdftex.def)             Requested size: 375.80544pt x 187.90198pt.
+<cnf_matrix_testset.png, id=235, 433.62pt x 289.08pt>
 File: cnf_matrix_testset.png Graphic file (type png)
 <use cnf_matrix_testset.png>
-Package pdftex.def Info: cnf_matrix_testset.png  used on input line 891.
+Package pdftex.def Info: cnf_matrix_testset.png  used on input line 938.
 (pdftex.def)             Requested size: 375.80544pt x 250.5492pt.
- [12
 
- <./cnf_matrix_testset.png>]
-<signal_fault_normal_raw_freeform.png, id=236, 867.24pt x 578.16pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[13
+
+ <./model_grid_search_statistics.png>]
+<signal_fault_normal_raw_freeform.png, id=249, 867.24pt x 578.16pt>
 File: signal_fault_normal_raw_freeform.png Graphic file (type png)
 <use signal_fault_normal_raw_freeform.png>
 Package pdftex.def Info: signal_fault_normal_raw_freeform.png  used on input li
-ne 919.
+ne 966.
 (pdftex.def)             Requested size: 375.80544pt x 250.53596pt.
- [13 <./signal_fault_normal_raw_freeform.png>]
-Overfull \hbox (15.07425pt too wide) in paragraph at lines 998--1000
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[14 <./cnf_matrix_testset.png>]
+Overfull \hbox (15.07425pt too wide) in paragraph at lines 1045--1047
 \T1/ppl/m/n/10.95 [1] http://dspace.vsb.cz/bitstream/handle/10084/133114/VAN431
 _FEI_P1807_1801V001_2018.pdf 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1023.
-[14]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1023.
+[15 <./signal_fault_normal_raw_freeform.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1072.
+ [16]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1072.
  (report_notebook.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1023.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1023.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1072.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1072.
 
 Package rerunfilecheck Info: File `report_notebook.out' has not changed.
 (rerunfilecheck)             Checksum: 1391B85021FAB1B6BC51A9F61DB12701;1362.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1023.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1072.
  ) 
 Here is how much of TeX's memory you used:
- 11944 strings out of 492946
- 181678 string characters out of 3125823
- 279987 words of memory out of 3000000
- 15525 multiletter control sequences out of 15000+200000
- 34282 words of font info for 88 fonts, out of 3000000 for 9000
+ 11961 strings out of 492946
+ 181967 string characters out of 3125823
+ 281075 words of memory out of 3000000
+ 15531 multiletter control sequences out of 15000+200000
+ 35677 words of font info for 91 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,6n,77p,427b,480s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,6n,77p,677b,480s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\Victor\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600
 \ectt1095.pk>{C:/Users/Victor/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips
 /base/8r.enc}<C:/Users/Victor/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
@@ -1047,9 +1055,9 @@ or/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/palatino/uplb8a.pfb><C:/Us
 ers/Victor/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/palatino/uplr8a.pf
 b><C:/Users/Victor/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw/palatino/u
 plri8a.pfb>
-Output written on report_notebook.pdf (14 pages, 586396 bytes).
+Output written on report_notebook.pdf (16 pages, 605118 bytes).
 PDF statistics:
- 348 PDF objects out of 1000 (max. 8388607)
- 89 named destinations out of 1000 (max. 500000)
- 237 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 368 PDF objects out of 1000 (max. 8388607)
+ 97 named destinations out of 1000 (max. 500000)
+ 242 words of extra memory for PDF output out of 10000 (max. 10000000)
 
